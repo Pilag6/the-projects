@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://images2.alphacoders.com/100/1009034.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #024747;
+    height: 400px;
+    width: 400px;
+    border: 5px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    & h1 {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    & h2 {
+        color: #024747;
+        background-color: #fff;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        border-radius: 5px;
+    }
+
+    & .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 300px;
+
+        & button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 1rem;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: all 0.5s ease-in-out;
+        }
+        & .add {
+            background-color: #19fd00;
+
+            & :hover {
+                background-color: #16c803;
+            }
+        }
+        .subtract {
+            background-color: #fd6100;
+        }
+        & .reset {
+            background-color: #b7d605;
+        }
+    }
+}
