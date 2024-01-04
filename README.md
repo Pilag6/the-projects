@@ -1,4 +1,4 @@
-# THE PROJECT
+# THE PROJECTS
 
 <img src="https://github.com/Pilag6/the-projects/assets/79191808/433f614c-5069-4d4a-b2d6-e7384edcfcf1" width=200px title="JavaScript">
 
