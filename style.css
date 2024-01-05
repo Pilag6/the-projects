@@ -34,8 +34,6 @@ aside {
     display: flex;
     flex-direction: column;
     z-index: 9999;
-    /* justify-content: space-between; */
-    /* align-items: center; */
 
     .logo {
         display: block;
@@ -51,12 +49,13 @@ aside {
         h2 {
             font-size: 1.5rem;
             margin-top: 10px;
-            color: #F0DB4F;
+            color: #f0db4f;
+            cursor: pointer;
+            width: 100%;
 
             &:hover {
                 text-decoration: underline;
             }
-
         }
     }
 
@@ -72,11 +71,9 @@ aside {
 
             &:hover a,
             &:hover a i {
-                color: #F0DB4F;
-                border-color: #F0DB4F ;
+                color: #f0db4f;
+                border-color: #f0db4f;
             }
-
-
 
             a {
                 color: #f5f5f5;
@@ -117,5 +114,175 @@ aside {
                 opacity: 0.8;
             }
         }
+    }
+}
+
+main {
+    color: #131212;
+    margin-left: 250px;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #131212;
+        padding: 20px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+        .card {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .card-img {
+                width: 100%;
+                height: 180px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 15px;
+                gap: 10px;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #777;
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #f5f5f5;
+                background-color: #131212;
+                font-size: 1.2rem;
+                font-weight: 700;
+                transition: 0.3s;
+                padding: 15px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 1600px) {
+    .cards-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    aside {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                display: none;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            /* width: 100%; */
+            padding: 0;
+
+            li {
+                margin-bottom: 0;
+                font-size: 1rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    border: none;
+                    padding: 10px;
+
+                    i {
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .github {
+            height: 100%;
+            width: fit-content;
+            margin: 0;
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    main {
+        margin-left: 0;
+        margin-bottom: 70px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 }
