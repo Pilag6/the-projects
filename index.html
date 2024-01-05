@@ -13,6 +13,13 @@
             type="image/x-icon"
         />
 
+        <!-- Animate -->
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <!-- CSS -->
 
         <link rel="stylesheet" href="./style.css" />
@@ -30,7 +37,7 @@
     <body>
         <aside>
             <section class="logo">
-                <img src="https://bit.ly/41Ot8Pt" alt="logo" />
+                <img src="https://bit.ly/41Ot8Pt" alt="logo" draggable="false"/>
                 <h2>The Projects</h2>
             </section>
 
@@ -51,112 +58,88 @@
             </ul>
 
             <section class="github">
-                <a href="https://github.com/Pilag6/the-projects" target="_blank"
-                    ><i class="fa-brands fa-github"></i>GitHub<i
-                        class="fa-solid fa-arrow-up-right-from-square"
-                    ></i
-                ></a>
+                <a
+                    href="https://github.com/Pilag6/the-projects"
+                    target="_blank"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
             </section>
         </aside>
 
         <main>
-            <h1>The Projects</h1>
+            <div class="main-title">
+                <h1 class="animate__animated animate__bounceInLeft">
+                    The Projects
+                </h1>
+
+                <div class="dark-light-mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+            </div>
 
             <div class="cards-container">
                 <!-- Countify -->
-                <div class="card">
+                <article>
                     <div class="card-img">
-                        <img src="https://bit.ly/3TP4Jal" alt="Countify" />
+                        <img src="https://bit.ly/3TP4Jal" alt="Countify" draggable="false"/>
                     </div>
 
                     <div class="card-text">
                         <h3>Countify</h3>
-    
+
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
+                            <em>Counter</em> developed using
+                            <strong>Vanilla JavaScript</strong>. We explore the
+                            utilization of the
+                            <code>addEventListener</code> method to respond to
+                            events, specifically the <code>click</code> event.
                         </p>
-    
                     </div>
-                    <a href="./01-counterApp/index.html">Go to Project</a>
-                </div>
+                    <a href="./01-counterApp/index.html"
+                        >Go to Project <i class="fa-brands fa-space-awesome"></i
+                    ></a>
+                </article>
 
                 <!-- Slider 1 -->
-                <div class="card">
+                <article>
                     <div class="card-img">
-                        <img src="./assets/slider1.png" alt="Countify" />
+                        <img src="./assets/slider1.png" alt="Slider" draggable="false"/>
                     </div>
 
                     <div class="card-text">
                         <h3>Slider v.001</h3>
-    
+
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
+                            <em>Slider</em> developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to <code>import</code> data from an external file and how we can insert this data into the <strong>DOM</strong> using the <code>textContent</code> property.
                         </p>
-    
                     </div>
-                    <a href="./02-slider-1/index.html">Go to Project</a>
-                </div>
+                    <a href="./02-slider-1/index.html"
+                        >Go to Project <i class="fa-brands fa-space-awesome"></i
+                    ></a>
+                </article>
 
                 <!-- Password Generator -->
-                <div class="card">
+                <article>
                     <div class="card-img">
-                        <img src="./assets/pass-gen.png" alt="Countify" />
+                        <img src="./assets/pass-gen.png" alt="Password Generator" draggable="false"/>
                     </div>
 
                     <div class="card-text">
                         <h3>Password Generator</h3>
-    
+
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quisquam, voluptatum.
                         </p>
-    
                     </div>
-                    <a href="./02-slider-1/index.html">Go to Project</a>
-                </div>
-
-
-
-
-                 <!-- Password Generator -->
-                 <div class="card">
-                    <div class="card-img">
-                        <img src="./assets/pass-gen.png" alt="Countify" />
-                    </div>
-
-                    <div class="card-text">
-                        <h3>Password Generator</h3>
-    
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
-                        </p>
-    
-                    </div>
-                    <a href="./02-slider-1/index.html">Go to Project</a>
-                </div>
-
-
-                 <!-- Password Generator -->
-                 <div class="card">
-                    <div class="card-img">
-                        <img src="./assets/pass-gen.png" alt="Countify" />
-                    </div>
-
-                    <div class="card-text">
-                        <h3>Password Generator</h3>
-    
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
-                        </p>
-    
-                    </div>
-                    <a href="./02-slider-1/index.html">Go to Project</a>
-                </div>
-
+                    <a href="./02-slider-1/index.html"
+                        >Go to Project <i class="fa-brands fa-space-awesome"></i
+                    ></a>
+                </article>
             </div>
         </main>
     </body>
