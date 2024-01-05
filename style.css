@@ -129,10 +129,43 @@ aside {
         GITHUB
     ---------------*/
 
-    .github {
+    footer {
         margin-top: auto;
         background: var(--white);
         padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        .dark-light-mode {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            i {
+                font-size: 1.2rem;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--yellow);
+                color: var(--black);
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--black);
+                    color: var(--white);
+                }
+            }
+
+            i.fa-sun {
+                display: none;
+            }
+        }
 
         a {
             display: flex;
@@ -173,33 +206,6 @@ main {
             font-weight: 700;
         }
 
-        .dark-light-mode {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-
-            i {
-                font-size: 1.2rem;
-                border: 1px solid var(--white);
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: var(--yellow);
-                color: var(--black);
-                border-color: var(--yellow);
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                    background-color: var(--black);
-                    color: var(--white);
-                    border-color: var(--white);
-                }
-            }
-        }
     }
 
     .cards-container {
@@ -375,12 +381,13 @@ main {
             display: none;
         }
 
-        .github {
+        footer {
             width: fit-content;
             margin-left: auto;
             height: 100%;
             display: flex;
             justify-content: center;
+            gap: 10px;
             align-items: center;
             padding: 15px;
 
@@ -432,7 +439,7 @@ main {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background: var(--black);
         color: var(--white);
@@ -464,4 +471,4 @@ main {
             color: var(--black);
         }
     }
-}
+} */
