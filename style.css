@@ -8,8 +8,14 @@
 :root {
     --yellow: #f0db4f;
     --black: #131212;
+    --blackGrey: #2a2828;
     --white: #f5f5f5;
     --gray: #777;
+}
+
+.dark-mode {
+    --black: #2a2828;
+    --white: #131212;
 }
 
 body {
