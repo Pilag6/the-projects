@@ -4,20 +4,28 @@ const lightMode = document.querySelector('i.fa-sun');
 const darkMode = document.querySelector('i.fa-moon');
 const aside = document.querySelector('aside');
 const body = document.querySelector('body');
-const mainTitleH1 = document.querySelector('.main-title h1');
-const mainTitle = document.querySelector('.main-title');
+const mainTitleH2 = document.querySelectorAll('.main-titles h2');
+const mainTitle = document.querySelectorAll('.main-titles');
 const cardsArticle = document.querySelectorAll('.cardArticle');
 const goToProject = document.querySelectorAll('#goToProject-btn');
+const aboutText = document.querySelector('.about-text');
 
-console.log(cardsArticle);
 
 export function toggleDarkMode() {
     lightMode.style.display = 'flex';
     darkMode.style.display = 'none';
     aside.style.backgroundColor = '#2a2828';
     body.style.backgroundColor = '#131212';
-    mainTitleH1.style.color = '#f5f5f5';
-    mainTitle.style.backgroundColor = '#2a2828';
+    aboutText.style.color = '#f5f5f5';
+
+    mainTitle.forEach(link => {
+        link.style.backgroundColor = '#2a2828';
+    });
+    
+
+    mainTitleH2.forEach(link => {
+        link.style.color = '#f5f5f5';
+    });
 
     goToProject.forEach(link => {
         link.style.color = '#f5f5f5';
@@ -35,8 +43,16 @@ export function toggleLightMode() {
     darkMode.style.display = 'flex';
     body.style.backgroundColor = '#f5f5f5';
     aside.style.backgroundColor = '#131212';
-    mainTitleH1.style.color = '#131212';
-    mainTitle.style.backgroundColor = '#f5f5f5';
+    aboutText.style.color = '#131212';
+
+    mainTitle.forEach(link => {
+        link.style.backgroundColor = '#f5f5f5';
+    });
+    
+
+    mainTitleH2.forEach(link => {
+        link.style.color = '#131212';
+    });
 
     cardsArticle.forEach(card => {
         // card.style.border = 'none';
