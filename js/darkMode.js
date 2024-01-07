@@ -6,8 +6,10 @@ const aside = document.querySelector('aside');
 const body = document.querySelector('body');
 const mainTitleH1 = document.querySelector('.main-title h1');
 const mainTitle = document.querySelector('.main-title');
-const cardsContainer = document.querySelectorAll('.cards-container article');
-const goToProject = document.querySelectorAll('.cards-container article a');
+const cardsArticle = document.querySelectorAll('.cardArticle');
+const goToProject = document.querySelectorAll('#goToProject-btn');
+
+console.log(cardsArticle);
 
 export function toggleDarkMode() {
     lightMode.style.display = 'flex';
@@ -16,11 +18,12 @@ export function toggleDarkMode() {
     body.style.backgroundColor = '#131212';
     mainTitleH1.style.color = '#f5f5f5';
     mainTitle.style.backgroundColor = '#2a2828';
+
     goToProject.forEach(link => {
         link.style.color = '#f5f5f5';
     });
 
-    cardsContainer.forEach(card => {
+    cardsArticle.forEach(card => {
         card.style.border = '1px solid #f5f5f52d';
         card.style.backgroundColor = '#2a2828';
         card.style.color = '#f5f5f5';
@@ -35,8 +38,8 @@ export function toggleLightMode() {
     mainTitleH1.style.color = '#131212';
     mainTitle.style.backgroundColor = '#f5f5f5';
 
-    cardsContainer.forEach(card => {
-        card.style.border = 'none';
+    cardsArticle.forEach(card => {
+        // card.style.border = 'none';
         card.style.backgroundColor = '#f5f5f5';
         card.style.color = '#131212';
     });
