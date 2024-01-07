@@ -21,6 +21,12 @@ export const cardsInfo = [
         image: "./assets/pass-gen.webp",
         url: "#",
     },
+    {
+        name: "Gradient Generator",
+        description: `Comming soon!`,
+        image: "./assets/gradient-gen.webp",
+        url: "#",
+    },
 ];
 
 

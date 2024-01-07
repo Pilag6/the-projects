@@ -5,6 +5,7 @@ import { toggleDarkMode, toggleLightMode } from "./js/darkMode.js";
 
 addCardsTemplate();
 
+
 // DARK MODE
 
 const lightMode = document.querySelector("i.fa-sun");
