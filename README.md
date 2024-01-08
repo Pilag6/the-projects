@@ -22,6 +22,10 @@ Finally, we gain insights into the creation of functions and their invocation as
 ## 3 - Password Generator | Comming soon!
 ![passGen](https://github.com/Pilag6/the-projects/assets/79191808/7f544902-3f90-460e-9d9b-98a7ae8cb7ea)
 
+## 4 - Gradient Generator | Comming soon!
+![Gradient Gen](https://github.com/Pilag6/the-projects/assets/79191808/0dedc481-b072-42ea-b479-377390dd6aaa)
+
+
 # Collaborators
 <table>
   <tbody>
