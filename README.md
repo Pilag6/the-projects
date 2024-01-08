@@ -21,3 +21,33 @@ Finally, we gain insights into the creation of functions and their invocation as
 
 ## 3 - Password Generator | Comming soon!
 ![passGen](https://github.com/Pilag6/the-projects/assets/79191808/7f544902-3f90-460e-9d9b-98a7ae8cb7ea)
+
+# Collaborators
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <a href="https://github.com/akiko-luka" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138122651?v=4" alt="Akiko Luka" />
+        </a><br />
+        <div>Akiko Luka</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/I-Ouaiahou" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138121207?v=4" alt="Ismail Ouaiahou" />
+        </a><br />
+        <div>Ismail Ouaiahou</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/ckdonah" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138124430?v=4" alt="Godwin " />
+        </a><br />
+        <div>Godwin Onah</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
