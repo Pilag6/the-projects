@@ -1,4 +1,4 @@
-# THE PROJECTS |  [Live Demo](https://pilag6.github.io/the-projects/)
+# THE PROJECTS | <a href="https://pilag6.github.io/the-projects/"><strong>➥ Live Demo</strong></a>
 
 
 <img src="https://github.com/Pilag6/the-projects/assets/79191808/433f614c-5069-4d4a-b2d6-e7384edcfcf1" width=200px title="JavaScript">
