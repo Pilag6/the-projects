@@ -1,7 +1,7 @@
 /* JAVASCRIP
 
-1- Acces to all the references
-3- Adjust Range lenght ans match it with the input value
+1- Acces to all the references x
+3- Adjust Range lenght ans match it with the input value x
 2- All the chars
 4- Generate Password
 5- Add event Listener to button element
@@ -27,4 +27,11 @@ function adjustLengthRange() {
 }
 
 inputRangeValue.addEventListener("input", adjustLengthRange)
+
+// All the chars
+
+const lowercase_chars = "abcde"
+const uppercase_chars = "abcde"
+const numbers_chars = "0123456789"
+const symbols_chars = "abcde"
 

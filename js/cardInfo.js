@@ -19,7 +19,7 @@ export const cardsInfo = [
         name: "Password Generator",
         description: `Comming soon!`,
         image: "./assets/pass-gen.webp",
-        url: "#",
+        url: "./03-passGen/index.html",
     },
     {
         name: "Gradient Generator",
