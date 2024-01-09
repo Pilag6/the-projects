@@ -6,7 +6,7 @@ const aside = document.querySelector('aside');
 const body = document.querySelector('body');
 const mainTitleH2 = document.querySelectorAll('.main-titles h2');
 const mainTitle = document.querySelectorAll('.main-titles');
-const cardsArticle = document.querySelectorAll('.cardArticle');
+const cardsArticle = document.querySelectorAll('#cardArticle');
 const goToProject = document.querySelectorAll('#goToProject-btn');
 const aboutText = document.querySelector('.about-text');
 
@@ -28,13 +28,14 @@ export function toggleDarkMode() {
     });
 
     goToProject.forEach(link => {
-        link.style.color = '#f5f5f5';
+        link.style.backgroundColor = "red";
     });
-
+    
     cardsArticle.forEach(card => {
         card.style.border = '1px solid #f5f5f52d';
-        card.style.backgroundColor = '#2a2828';
+        card.style.backgroundColor = 'red';
         card.style.color = '#f5f5f5';
+        // link.id = 'goToProject-btn-dark';
     });
 }
 

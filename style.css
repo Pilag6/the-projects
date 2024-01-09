@@ -236,12 +236,13 @@ main {
                 text-indent: 35px;
 
                 a {
-                    color: var(--black);
                     font-weight: 700;
                     transition: all 0.3s ease-in-out;
-
+                    color: #c4b240;
+                    
                     &:hover {
-                        color: var(--yellow);
+                        color: var(--black);
+                        text-decoration: underline;
                     }
 
                     i {

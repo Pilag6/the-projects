@@ -6,7 +6,7 @@ export function addCardsTemplate() {
     cardsInfo.forEach((card) => {
         let cardTemplate = document.createElement("article");
 
-        cardTemplate.classList.add("cardArticle");
+        cardTemplate.id = "cardArticle";
 
         cardTemplate.innerHTML = `
             <div class="card-image">
@@ -16,7 +16,7 @@ export function addCardsTemplate() {
                 <h3>${card.name}</h3>
                 <p>${card.description}</p>
             </div>
-            <a href="${card.url}" target="_blank" rel="noopener noreferrer" id="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
+            <a href="${card.url}" target="_blank" id="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
             ></a>
     `;
 
