@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Material Icons Google -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"
+        />
+
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <main>
+            <div class="generator">
+                <section class="generator-title">
+                    <img src="./favicon.png" alt="" />
+                    <h1>Password <br />Generator</h1>
+                </section>
+
+                <label class="password-wrap">
+                    <input type="text" id="password" />
+                    <button class="material-symbols-outlined" id="copy">
+                        content_copy
+                    </button>
+                </label>
+
+                <div class="div-length">Password Length</div>
+
+                <label class="range-input">
+                    <input
+                        type="range"
+                        id="input-range-value"
+                        value="15"
+                        min="5"
+                        max="25"
+                        step="1"
+                    />
+                    <span class="span-range-value">12</span>
+                </label>
+
+                <label class="label-check">
+                    <span>Include Lowercase (a-z)</span>
+                    <input type="checkbox" id="lowercase" checked>
+                </label>
+
+                <label class="label-check">
+                    <span>Include Uppercase (A-Z)</span>
+                    <input type="checkbox" id="uppercase">
+                </label>
+
+                <label class="label-check">
+                    <span>Include Numbers (0-9)</span>
+                    <input type="checkbox" id="numbers">
+                </label>
+
+                <label class="label-check">
+                    <span>Include Symbols (!@#$%&*)</span>
+                    <input type="checkbox" id="symbols">
+                </label>
+
+                <button type="submit" id="generate">Generate Password</button>
+
+
+            </div>
+
+        </main>
+
+
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
