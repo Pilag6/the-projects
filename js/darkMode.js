@@ -37,6 +37,9 @@ export function toggleDarkMode() {
         card.style.color = '#f5f5f5';
         // link.id = 'goToProject-btn-dark';
     });
+
+    // Save the current mode to localStorage
+    localStorage.setItem('darkMode', 'enabled');
 }
 
 export function toggleLightMode() {
@@ -60,4 +63,17 @@ export function toggleLightMode() {
         card.style.backgroundColor = '#f5f5f5';
         card.style.color = '#131212';
     });
+
+    // Save the current mode to localStorage
+    localStorage.setItem('darkMode', 'disabled');
+}
+
+// Check the initial mode from localStorage
+const initialDarkMode = localStorage.getItem('darkMode');
+
+// Set the initial mode based on the value retrieved from localStorage
+if (initialDarkMode === 'enabled') {
+    toggleDarkMode();
+} else {
+    toggleLightMode();
 }
