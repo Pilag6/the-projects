@@ -86,9 +86,9 @@ button {
     position: relative;
 
     input {
-        /* flex: 1 1 0%; */
+        flex: 1 1 0%;
         padding: 0.5rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 600;
         outline: none;
         border: none;
@@ -120,7 +120,7 @@ button {
     content: "";
     display: block;
     height: 2px;
-    width: 80%;
+    width: 100%;
     position: absolute;
     top: 110%;
     left: 0;
