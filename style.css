@@ -272,7 +272,7 @@ main {
     .cards-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        gap: 40px;
         padding: 20px 40px;
         margin-bottom: 100px;
 
@@ -283,6 +283,8 @@ main {
             display: flex;
             flex-direction: column;
             border: 1px solid #f5f5f52d;
+            outline: 3px solid var(--yellow);
+            outline-offset: 8px;
 
             &:hover {
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.585);
