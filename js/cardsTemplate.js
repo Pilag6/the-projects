@@ -16,7 +16,7 @@ export function addCardsTemplate() {
                 <h3>${card.name}</h3>
                 <p>${card.description}</p>
             </div>
-            <a href="${card.url}" target="_blank" id="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
+            <a href="${card.url}" target="_blank" class="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
             ></a>
     `;
 

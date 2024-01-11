@@ -2,10 +2,7 @@ export const cardsInfo = [
     {
         name: "Countify",
         description: `<em>Counter</em> developed using
-        <strong>Vanilla JavaScript</strong>. We explore the
-        utilization of the
-        <code>addEventListener</code> method to respond to
-        events, specifically the <code>click</code> event.`,
+        <strong>Vanilla JavaScript</strong>. We explore the utilization of the <code>addEventListener</code> method to respond to events, specifically the <code>click</code> event.`,
         image: "./assets/counter.webp",
         url: "./01-counterApp/index.html",
     },
@@ -17,7 +14,7 @@ export const cardsInfo = [
     },
     {
         name: "Password Generator",
-        description: `Comming soon!`,
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>Math.random()</code> method to generate random numbers and how to deal with <code>input</code> values like <code>range</code> and <code>checkbox</code>.`,
         image: "./assets/pass-gen.webp",
         url: "./03-passGen/index.html",
     },
@@ -28,10 +25,3 @@ export const cardsInfo = [
         url: "#",
     },
 ];
-
-
-
-
-
-
-

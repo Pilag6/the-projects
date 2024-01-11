@@ -7,9 +7,10 @@ const body = document.querySelector('body');
 const mainTitleH2 = document.querySelectorAll('.main-titles h2');
 const mainTitle = document.querySelectorAll('.main-titles');
 const cardsArticle = document.querySelectorAll('#cardArticle');
-const goToProject = document.querySelectorAll('#goToProject-btn');
+const goToProject = document.querySelectorAll('.goToProject-btn');
 const aboutText = document.querySelector('.about-text');
 
+console.log(goToProject)
 
 export function toggleDarkMode() {
     lightMode.style.display = 'flex';

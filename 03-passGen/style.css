@@ -40,8 +40,8 @@ main {
 }
 
 .generator {
-    max-width: 600px;
-    min-width: 400px;
+    width: 500px;
+    min-width: 350px;
     background-color: #ffffffd5;
     padding: 2rem;
 
@@ -80,6 +80,7 @@ button {
 
 .password-wrap {
     display: flex;
+    justify-content: space-between;
     margin: 2rem 0 4rem 0;
     width: 100%;
     position: relative;
@@ -111,6 +112,7 @@ button {
         outline: none;
         border: none;
         cursor: pointer;
+        font-size: 2rem;
     }
 }
 
