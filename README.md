@@ -22,7 +22,7 @@ Start building impactful and dynamic web applications today!
 ## 01 - Countify | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/01-counterApp)
 ![Countify](https://github.com/Pilag6/the-projects/assets/79191808/2ce1f722-76f8-4e39-9f94-eea4ab777a0f)
 
-In this counter application, developed using **Vanilla JavaScript**, we explore the utilization of the `querySelector` method to select elements within the **Document Object Model (DOM)** and the `addEventListener` method to respond to events, specifically the `click` event.
+In this ***Counter*** application, developed using **Vanilla JavaScript**, we explore the utilization of the `querySelector` method to select elements within the **Document Object Model (DOM)** and the `addEventListener` method to respond to events, specifically the `click` event.
 
 The tutorial also covers the process of incrementing or decrementing values, inserting these values into a specific DOM element, and dynamically altering the counter's color based on its value. When the value is less than zero, the color is set to a reddish tone, while for values greater than zero, a greenish hue is applied.
 
@@ -33,12 +33,20 @@ Finally, we gain insights into the creation of functions and their invocation as
 ## 02 - Slider v.001 | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/02-slider-1)
 ![Slider v001](https://github.com/Pilag6/the-projects/assets/79191808/b1313430-be41-4a4d-8b64-bf0a5b7216c4)
 
-Slider developed using Vanilla JavaScript. In this project we learn how to import data from an external file and how we can insert this data into the DOM using the textContent property.
+***Slider*** developed using **Vanilla JavaScript**. 
+
+In this project we went a bit further. We explore how to `export` and `import` data from an external file and how we can insert this data into the DOM using the `textContent` property.
+
+Also, we learn how to create random numbers using the `Math.random()`, one of the most common and useful methods in JavaScript.
 
 ## 3 - Password Generator | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/03-passGen)
 ![passGen](https://github.com/Pilag6/the-projects/assets/79191808/7f544902-3f90-460e-9d9b-98a7ae8cb7ea)
 
-Developed using Vanilla JavaScript. In this project we learn how to use the Math.random() method to generate random numbers and how to deal with input values like range and checkbox.
+Powerfull ***Password Generator*** developed using **Vanilla JavaScript**.
+
+In this project we went a bit further with the `Math.random()` method to generate random numbers and how to deal with `input` values like `range` and `checkbox`.
+
+At the end, we also leanr how to copy a text to the clipboard using `navigator.clipboard.writeText()` method and a we had first approach to `setTimout()` method.
 
 ## 4 - Gradient Generator | Comming soon!
 ![Gradient Gen](https://github.com/Pilag6/the-projects/assets/79191808/0dedc481-b072-42ea-b479-377390dd6aaa)
