@@ -18,38 +18,55 @@
         />
     </head>
     <body>
-
         <div class="container">
             <section class="box-container">
+
+                <!-- Display -->
                 <div class="color-display">
+                    <!-- class="gradient-display" -->
                     <h1>Gradient Color Generator</h1>
                 </div>
-                
+
+                <!-- Generator -->
                 <section class="generator">
+                    
+                    <!-- Direction -->
                     <div class="direction">
                         <h3>Direction</h3>
-                        <button class="dropbtn">Dropdown <i class="fa-solid fa-angle-down"></i></button>
+                        <button class="dropbtn">
+                            Dropdown <i class="fa-solid fa-angle-down"></i>
+                        </button>
                         <div class="dropdown-content"></div>
+
+                        <!-- Use Select => Option -->
                     </div>
+
+                    <!-- Color Selector -->
                     <div class="color-selector">
                         <h3>Colors</h3>
                         <div class="box-selector"></div>
                         <div class="box-selector"></div>
+                        <!-- Use input:color -->
                     </div>
+
                 </section>
 
+                <!-- Code Display -->
                 <section class="code-display">
                     <h4>CSS Code</h4>
                     <div class="code-box"></div>
+                    <!-- <div class="code-box">background:linear-gradient(to left top, #051837, #01B7AB);</div> -->
+
                 </section>
 
+                <!-- Buttons -->
                 <section class="buttons">
-                    <button type="submit" id="random-btn">Random Gradient</button>
+                    <button type="submit" id="random-btn">
+                        Random Gradient
+                    </button>
                     <button type="submit" id="copy-btn">Copy Gradient</button>
                 </section>
-            
             </section>
-                
         </div>
 
         <script type="module" src="main.js"></script>

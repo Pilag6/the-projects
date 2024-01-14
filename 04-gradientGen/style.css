@@ -20,8 +20,8 @@
 
 .box-container {
     border-radius: 5px;
-    height: 580px;
-    width: 400px;
+    height: 580px; /*No height*/
+    width: 450px;
     background-color: #fff;
     padding: 2rem;
     box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
