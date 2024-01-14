@@ -39,6 +39,31 @@ main {
     align-items: center;
 }
 
+.go-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #131212;
+    color: #f0db4f;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+    color: #131212;
+    background-color: #f0db4f;
+
+    &:hover {
+        background-color: #131212;
+        color: #f0db4f;
+    }
+
+    i {
+        rotate: -90deg;
+        margin-right: 0.5rem;
+    }
+}
+
 .generator {
     width: 500px;
     min-width: 350px;
@@ -81,7 +106,7 @@ button {
 .password-wrap {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0 4rem 0;
+    margin: 2rem 0;
     width: 100%;
     position: relative;
 
@@ -131,7 +156,7 @@ button {
     color: var(--green);
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .range-input {
@@ -190,7 +215,6 @@ button {
         background-color: var(--green);
     }
 }
-
 
 button[type="submit"] {
     width: 100%;

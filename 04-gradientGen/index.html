@@ -7,6 +7,10 @@
 
         <link rel="stylesheet" href="style.css" />
 
+        <!-- Favicon -->
+
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Circle-icons-art.svg/1024px-Circle-icons-art.svg.png" type="image/x-icon">
+
         <!-- Font awesome -->
 
         <link
@@ -19,6 +23,7 @@
     </head>
     <body>
         <div class="container">
+            <a class="go-home" href="../index.html"><i class="fa-solid fa-arrow-turn-up"></i> Go Home!</a>
             <section class="box-container">
 
                 <!-- Display -->
@@ -38,15 +43,20 @@
                         </button>
                         <div class="dropdown-content"></div>
 
-                        <!-- Use Select => Option -->
+                        <!-- Instead of button we can use Select => Option -->
                     </div>
 
                     <!-- Color Selector -->
                     <div class="color-selector">
                         <h3>Colors</h3>
-                        <div class="box-selector"></div>
-                        <div class="box-selector"></div>
-                        <!-- Use input:color -->
+                        <!-- <div class="box-selector"></div>
+                        <div class="box-selector"></div> -->
+
+                        <div class="box-selector">
+                            <input type="color" value="" id="" />
+                            <input type="color" value="" id="" />
+                        </div>
+                        <!-- Instead 2 divs we can Use input:color -->
                     </div>
 
                 </section>
@@ -54,8 +64,8 @@
                 <!-- Code Display -->
                 <section class="code-display">
                     <h4>CSS Code</h4>
-                    <div class="code-box"></div>
-                    <!-- <div class="code-box">background:linear-gradient(to left top, #051837, #01B7AB);</div> -->
+                    <!-- <div class="code-box"></div> -->
+                    <div class="code-box">background: linear-gradient(to left top, #051837, #01B7AB);</div>
 
                 </section>
 
@@ -65,6 +75,8 @@
                         Random Gradient
                     </button>
                     <button type="submit" id="copy-btn">Copy Gradient</button>
+
+                    <!-- We don't need the type submit in this buttons -->
                 </section>
             </section>
         </div>

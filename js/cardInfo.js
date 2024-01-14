@@ -22,6 +22,6 @@ export const cardsInfo = [
         name: "Gradient Generator",
         description: `Comming soon!`,
         image: "./assets/gradient-gen.webp",
-        url: "#",
+        url: "./04-gradientGen/index.html",
     },
 ];

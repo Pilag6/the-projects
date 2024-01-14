@@ -16,6 +16,29 @@ body {
     align-items: center;
 }
 
+.go-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #131212;
+    color: #f0db4f;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+
+    &:hover {
+        color: #131212;
+        background-color: #f0db4f;
+    }
+
+    i {
+        rotate: -90deg;
+        margin-right: 0.5rem;
+    }
+}
+
 .counter-container {
     display: flex;
     flex-direction: column;
