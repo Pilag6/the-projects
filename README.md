@@ -84,7 +84,7 @@ At the end, we also leanr how to copy a text to the clipboard using `navigator.c
         <a href="https://github.com/Cmbs86" target="_blank">
           <img width="108" src="https://avatars.githubusercontent.com/u/138121655?v=44" alt="Carlos " />
         </a><br />
-        <div>Godwin Onah</div>
+        <div>Carlos Sousa</div>
         <sub>:white_check_mark:</sub>
       </td>
     </tr>
