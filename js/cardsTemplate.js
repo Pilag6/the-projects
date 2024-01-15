@@ -6,15 +6,17 @@ export function addCardsTemplate() {
     cardsInfo.forEach((card) => {
         let cardTemplate = document.createElement("article");
 
-        cardTemplate.id = "cardArticle";
+        cardTemplate.className = "cardArticle";
 
         cardTemplate.innerHTML = `
+            <p class="card-number">0${card.id + 1}</p>
             <div class="card-image">
                 <img src="${card.image}" alt="${card.name}" draggable="false" />
             </div>
             <div class="card-text">
+                
                 <h3>${card.name}</h3>
-                <p>${card.description}</p>
+                <p class="card-description">${card.description}</p>
             </div>
             <a href="${card.url}" target="_blank" class="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
             ></a>
