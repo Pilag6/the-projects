@@ -51,6 +51,9 @@ At the end, we also leanr how to copy a text to the clipboard using `navigator.c
 ## 4 - Gradient Generator | Comming soon!
 ![Gradient Gen](https://github.com/Pilag6/the-projects/assets/79191808/0dedc481-b072-42ea-b479-377390dd6aaa)
 
+## 5 - To-Do App *(with localStorage)* | Comming soon!
+![todogithub](https://github.com/Pilag6/the-projects/assets/79191808/68497608-0c58-41d3-b6f7-296d879e133a)
+
 
 # Collaborators
 <table>
