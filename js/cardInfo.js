@@ -24,4 +24,10 @@ export const cardsInfo = [
         image: "./assets/gradient-gen.webp",
         url: "./04-gradientGen/index.html",
     },
+    {
+        name: "To-Do App",
+        description: `Comming soon!`,
+        image: "./assets/todo.webp",
+        url: "./05-todoApp/index.html",
+    },
 ];
