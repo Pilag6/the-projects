@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title-->
+        <title>The Final Countdown</title>
+        <meta name="description" content="Descripción" />
+
+        <!-- Stylesheets CSS-->
+        <link rel="stylesheet" type="text/css" href="./normalize.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+
+        <!-- Favicon-->
+
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3003/3003202.png" type="image/x-icon">
+
+        <!------------ Google Font ---------->
+
+        <!----------- Font Awesome ---------->
+        <script
+            src="https://kit.fontawesome.com/4ce5221f73.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Animate  -->
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <a class="go-home" href="../index.html"><i class="fa-solid fa-arrow-turn-up"></i> Go Home!</a>
+            <article class="countdown">
+
+                <section class="title">
+                    <h1 id="launching">Launching soon</h1>
+                    <p>This is where I long to be</p>
+                </section>
+
+                <div class="countdown__nums animate__animated">
+                    <p id="days"><span></span> Days</p>
+                    <p id="hours"><span></span> Hours</p>
+                    <p id="mins"><span></span> MINS</p>
+                    <p id="secs"><span></span> SECS</p>
+                </div>
+
+                <h2 id="end" class="animate__animated"></h2>
+
+                <section class="form-subs">
+                    <h3>Get Notified</h3>
+                    <form action="">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        />
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </section>
+
+            </article>
+        </div>
+
+        <!-- <img src="./img/mobile (1).gif" alt=""> -->
+
+        <!-- JavaScript-->
+        <script type="module" src="./main.js"></script>
+
+        <!-- Confetti -->
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    </body>
+</html>

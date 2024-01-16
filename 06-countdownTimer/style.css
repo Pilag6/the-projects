@@ -1,0 +1,210 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: #000;
+    background-image: url("https://cdn.wallpapersafari.com/87/85/n16evf.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .go-home {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #131212;
+        background-color: #f0db4f;
+        padding: 0.8rem 1.2rem;
+        border-radius: 5px;
+        box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+
+        &:hover {
+            background-color: #131212;
+            color: #f0db4f;
+        }
+
+        i {
+            rotate: -90deg;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .countdown {
+        margin: 45px 0;
+        /* border: 1px solid #fff; */
+        border-radius: 10px;
+        padding: 20px;
+        width: 1200px;
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        background-image: url("https://cdn.wallpapersafari.com/87/85/n16evf.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #fff;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in-out;
+                letter-spacing: 15px;
+                text-shadow: 0px 0px 10px #000000c0;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #fff;
+                /* text-transform: uppercase; */
+                transition: all 0.3s ease-in-out;
+                letter-spacing: 5px;
+                text-shadow: 0px 0px 10px #000000c0;
+            }
+        }
+
+        .countdown__nums {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+            text-shadow: 2px 2px 10px #000000;
+
+            p {
+                font-size: 1rem;
+                text-transform: uppercase;
+                background: linear-gradient(to top, #ff105f, #ffad06);
+                border-radius: 10px;
+                width: 170px;
+                height: 170px;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 0 20px #ff105f, 0 0 60px #ffad06;
+                text-shadow: 0px 0px 15px #000000;
+
+                span {
+                    font-weight: 800;
+                    font-size: 3rem;
+                    text-shadow: 0px 0px 10px #000000c0;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(to top, #ff1060b7, #ffac06dd);
+            padding: 10px 50px;
+            display: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .form-subs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+
+            h3 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 10px 30px;
+                transition: all 0.3s ease-in-out;
+                /* text-decoration: underline #fff;
+                text-underline-offset: 10px; */
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                input {
+                    width: 300px;
+                    height: 60px;
+                    padding: 0 20px;
+                    border: none;
+                    outline: none;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    background: linear-gradient(to top, #2c003c, #860145);
+                    color: #fff;
+                    letter-spacing: 1px;
+                    padding-left: 30px;
+
+                    &::placeholder {
+                        color: #ffffffb0;
+                        text-transform: uppercase;
+                    }
+                }
+
+                button {
+                    width: 150px;
+                    height: 60px;
+                    border: none;
+                    outline: none;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    background: linear-gradient(to top, #ff105f, #ffad06);
+                    cursor: pointer;
+                    color: #fff;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                    letter-spacing: 1px;
+                    padding-right: 10px;
+                    transition: background 0.3s ease-in-out;
+
+                    &:hover {
+                        background: linear-gradient(to top, #ffad06, #ff105f);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen only (max-width: 500px) {
+    .countdown__nums {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
