@@ -23,12 +23,13 @@
     </head>
     <body>
         <div class="container">
+
             <a class="go-home" href="../index.html"><i class="fa-solid fa-arrow-turn-up"></i> Go Home!</a>
+
             <section class="box-container">
 
                 <!-- Display -->
                 <div class="color-display">
-                    <!-- class="gradient-display" -->
                     <h1>Gradient Color Generator</h1>
                 </div>
 
@@ -38,10 +39,22 @@
                     <!-- Direction -->
                     <div class="direction">
                         <h3>Direction</h3>
-                        <button class="dropbtn">
+                        <!-- <button class="dropbtn">
                             Dropdown <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content"></div>
+                        </button> -->
+                        <div class="select-box">
+                            <select>
+                                <option value="to right">Right</option>
+                                <option value="to left">Left</option>
+                                <option value="to top">Top</option>
+                                <option value="to bottom">Bottom</option>
+                                <option value="to right top">Right Top</option>
+                                <option value="to left top">Left Top</option>
+                                <option value="to right bottom">Right Bottom</option>
+                                <option value="to left bottom">Left Bottom</option>
+                                
+                            </select>
+                        </div>
 
                         <!-- Instead of button we can use Select => Option -->
                     </div>
@@ -53,8 +66,8 @@
                         <div class="box-selector"></div> -->
 
                         <div class="box-selector">
-                            <input type="color" value="" id="" />
-                            <input type="color" value="" id="" />
+                            <input type="color" value="#051837" id="color-left" />
+                            <input type="color" value="#01B7AB" id="color-right" />
                         </div>
                         <!-- Instead 2 divs we can Use input:color -->
                     </div>
@@ -65,7 +78,7 @@
                 <section class="code-display">
                     <h4>CSS Code</h4>
                     <!-- <div class="code-box"></div> -->
-                    <div class="code-box">background: linear-gradient(to left top, #051837, #01B7AB);</div>
+                    <div class="code-box">background: linear-gradient(to right, #051837, #01B7AB);</div>
 
                 </section>
 
@@ -80,6 +93,7 @@
                 </section>
             </section>
         </div>
+
 
         <script type="module" src="main.js"></script>
     </body>
