@@ -57,6 +57,12 @@ At the end, we also leanr how to copy a text to the clipboard using `navigator.c
 ## 6 - Countdown Timer | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/06-countdownTimer)
 ![countdown](https://github.com/Pilag6/the-projects/assets/79191808/2b97d599-b073-4de5-971b-7b15ff17d7ee)
 
+In this project we explore the `Date()` object and how to use it to create a countdown timer. Then we use `getTime()` method to get the current time in a way that we can use it to calculate the time left to the end of the countdown. 
+
+We also learn in detail how to use the `setInterval()` method to update the countdown every second.
+
+At the end we added some detail like `JSConfetti` library to make the countdown more fun when launched.
+
 # Collaborators
 
 <table>
