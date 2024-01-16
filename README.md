@@ -54,8 +54,11 @@ At the end, we also leanr how to copy a text to the clipboard using `navigator.c
 ## 5 - To-Do App *(with localStorage)* | Comming soon!
 ![todogithub](https://github.com/Pilag6/the-projects/assets/79191808/68497608-0c58-41d3-b6f7-296d879e133a)
 
+## 6 - Countdown Timer | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/06-countdownTimer)
+![countdown](https://github.com/Pilag6/the-projects/assets/79191808/2b97d599-b073-4de5-971b-7b15ff17d7ee)
 
 # Collaborators
+
 <table>
   <tbody>
     <tr>
