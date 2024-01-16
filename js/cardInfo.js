@@ -39,7 +39,7 @@ export const cardsInfo = [
         id: 5,
         name: "Countdown Timer",
         description: `<em>Countdown Timer</em> developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to get the current date and time using the <code>Date()</code> object and how to use the <code>setInterval</code> and <code>setTimeout</code> method to update the <strong>DOM</strong> every second.`,
-        image: "./assets/countdown.gif",
+        image: "./assets/countdown.webp",
         url: "./06-countdownTimer/index.html",
     },
 ];
