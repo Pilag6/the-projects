@@ -1,4 +1,4 @@
-const targetDate = new Date("Jan 26, 2024 09:23:00").getTime();
+const targetDate = new Date("Jan 16, 2024 09:23:00").getTime();
 
 const jsConfetti = new JSConfetti();
 
