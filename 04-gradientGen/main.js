@@ -58,3 +58,10 @@ randomBtn.addEventListener("click", () => generateGradient(true));
 
 copyBtn.addEventListener("click", copyGradient);
 
+
+setInterval(() => {
+    console.log(getRandomColor())
+}, 1000);
+setTimeout(() => {
+    console.log(getRandomColor())
+}, 2000);
