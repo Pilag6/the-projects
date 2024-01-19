@@ -9,7 +9,7 @@ At **The Projects**, we understand the importance of practical experience in the
 
 What sets us apart is our commitment to delivering fresh content every week. Each project we showcase comes with its complete source code available on this **GitHub**. We encourage you to explore, dissect, and understand the intricacies of the codebase. This open-access approach allows you to not only see the final result but also understand the process and decision-making behind each line of code.
 
-These projects are designed to guide you step-by-step through the process of building real-world applications, providing you with valuable insights and hands-on experience that you can apply toyour own projects.
+These projects are designed to guide you step-by-step through the process of building real-world applications, providing you with valuable insights and hands-on experience that you can apply to your own projects.
 
 Are you ready to embark on an exciting journey of web development? 
 
@@ -46,7 +46,7 @@ Powerfull ***Password Generator*** developed using **Vanilla JavaScript**.
 
 In this project we went a bit further with the `Math.random()` method to generate random numbers and how to deal with `input` values like `range` and `checkbox`.
 
-At the end, we also leanr how to copy a text to the clipboard using `navigator.clipboard.writeText()` method and a we had first approach to `setTimout()` method.
+At the end, we also learned how to copy a text to the clipboard using `navigator.clipboard.writeText()` method and a we had first approach to `setTimout()` method.
 
 ## 4 - Gradient Generator | Comming soon!
 ![Gradient Gen](https://github.com/Pilag6/the-projects/assets/79191808/0dedc481-b072-42ea-b479-377390dd6aaa)
@@ -59,7 +59,7 @@ At the end, we also leanr how to copy a text to the clipboard using `navigator.c
 
 In this project we explore the `Date()` object and how to use it to create a countdown timer. Then we use `getTime()` method to get the current time in a way that we can use it to calculate the time left to the end of the countdown. 
 
-We also learn in detail how to use the `setInterval()` method to update the countdown every second.
+We also learned in detail how to use the `setInterval()` method to update the countdown every second.
 
 At the end we added some detail like `JSConfetti` library to make the countdown more fun when launched.
 
