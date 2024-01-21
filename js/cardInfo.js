@@ -24,7 +24,7 @@ export const cardsInfo = [
     {
         id: 3,
         name: "Gradient Generator",
-        description: `Comming soon!`,
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>linear-gradient</code> property to create a gradient background and how to use the <code>input</code> event to update the gradient background in real time.`,
         image: "./assets/gradient-gen.webp",
         url: "./04-gradientGen/index.html",
     },
@@ -41,5 +41,12 @@ export const cardsInfo = [
         description: `<em>Countdown Timer</em> developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to get the current date and time using the <code>Date()</code> object and how to use the <code>setInterval</code> and <code>setTimeout</code> method to update the <strong>DOM</strong> every second.`,
         image: "./assets/countdown.webp",
         url: "./06-countdownTimer/index.html",
+    },
+    {
+        id: 6,
+        name: "Cookie Policy",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>document.cookie</code> property to store and retrieve data from the browser. We also continue to explore the <code>localStorage</code> method.`,
+        image: "./assets/cookiesPolicy.webp",
+        url: "./07-cookiePolicy/index.html",
     },
 ];
