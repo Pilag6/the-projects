@@ -48,8 +48,12 @@ In this project we went a bit further with the `Math.random()` method to generat
 
 At the end, we also learned how to copy a text to the clipboard using `navigator.clipboard.writeText()` method and a we had first approach to `setTimout()` method.
 
-## 4 - Gradient Generator | Comming soon!
+## 4 - Gradient Generator | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/04-gradientGen)
 ![Gradient Gen](https://github.com/Pilag6/the-projects/assets/79191808/0dedc481-b072-42ea-b479-377390dd6aaa)
+
+In this project we explore the `linear-gradient()` method to create a gradient background and how to use the `input` element to change the gradient colors. 
+
+We also learned how to create a function to generate random hex colors and how to use the `Math.random()` method.
 
 ## 5 - To-Do App *(with localStorage)* | Comming soon!
 ![todogithub](https://github.com/Pilag6/the-projects/assets/79191808/68497608-0c58-41d3-b6f7-296d879e133a)
@@ -63,8 +67,12 @@ We also learned in detail how to use the `setInterval()` method to update the co
 
 At the end we added some detail like `JSConfetti` library to make the countdown more fun when launched.
 
-## 7 - Cookie Policy *(with CookieStorage & localStorage)*  | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/7-cookiePolicy)
+## 7 - Cookie Policy *(with CookieStorage & localStorage)*  | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/07-cookiePolicy)
 ![cookiePolicy](https://github.com/Pilag6/the-projects/assets/79191808/3e73d2af-2347-42a0-8ab6-9cce04aa351f)
+
+In this project we explore the `localStorage` and `CookieStorage` to create a cookie policy that will be stored in the browser and will be displayed only once. For this we use the `getItem()` and `setItem()` methods and the property `document.cookie`.
+
+If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 days, and we hide the cookie policy message. If the user doesn't accept the cookie policy, we store it in the `localStorage` and we hide the cookie policy message. In both cases, the cookie policy message will be displayed only once.
 
 
 # Collaborators

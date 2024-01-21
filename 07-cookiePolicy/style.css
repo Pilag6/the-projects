@@ -12,7 +12,7 @@ img {
 body {
     font-family: "Roboto", sans-serif;
     background-color: #0d0a21;
-    background-image: url("https://img.freepik.com/free-photo/beautiful-pet-portrait-dog_23-2149218450.jpg?w=1480&t=st=1705857675~exp=1705858275~hmac=9cdb033c4f28cd2e5476430aa730b6a32b08ad97843a232f67c85e1580184e83");
+    background-image: url("https://bit.ly/3SqcXV9");
     background-size: cover;
     background-position: contain;
     background-repeat: no-repeat;
@@ -154,4 +154,15 @@ body {
 
 .cookies-container.active {
     right: 50px;
+}
+
+
+@media (width < 680px) {
+    .cookies-container {
+        width: 350px;
+        height: auto;
+        /* top: 50%; */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
