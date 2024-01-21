@@ -63,6 +63,10 @@ We also learned in detail how to use the `setInterval()` method to update the co
 
 At the end we added some detail like `JSConfetti` library to make the countdown more fun when launched.
 
+## 7 - Cookie Policy *(with CookieStorage & localStorage)*  | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/7-cookiePolicy)
+![cookiePolicy](https://github.com/Pilag6/the-projects/assets/79191808/3e73d2af-2347-42a0-8ab6-9cce04aa351f)
+
+
 # Collaborators
 
 <table>
@@ -73,6 +77,13 @@ At the end we added some detail like `JSConfetti` library to make the countdown 
           <img width="108" src="https://avatars.githubusercontent.com/u/138122651?v=4" alt="Akiko Luka" />
         </a><br />
         <div>Akiko Luka</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+       <td align="center" valign="top">
+        <a href="https://github.com/Cmbs86" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138121655?v=44" alt="Carlos " />
+        </a><br />
+        <div>Carlos Sousa</div>
         <sub>:white_check_mark:</sub>
       </td>
       <td align="center" valign="top">
@@ -87,13 +98,6 @@ At the end we added some detail like `JSConfetti` library to make the countdown 
           <img width="108" src="https://avatars.githubusercontent.com/u/138124430?v=4" alt="Godwin " />
         </a><br />
         <div>Godwin Onah</div>
-        <sub>:white_check_mark:</sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://github.com/Cmbs86" target="_blank">
-          <img width="108" src="https://avatars.githubusercontent.com/u/138121655?v=44" alt="Carlos " />
-        </a><br />
-        <div>Carlos Sousa</div>
         <sub>:white_check_mark:</sub>
       </td>
     </tr>
