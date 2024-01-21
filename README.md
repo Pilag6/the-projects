@@ -72,7 +72,7 @@ At the end we added some detail like `JSConfetti` library to make the countdown 
 
 In this project we explore the `localStorage` and `CookieStorage` to create a cookie policy that will be stored in the browser and will be displayed only once. For this we use the `getItem()` and `setItem()` methods and the property `document.cookie`.
 
-If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 days, and we hide the cookie policy message. If the user doesn't accept the cookie policy, we store it in the `localStorage` and we hide the cookie policy message. In both cases, the cookie policy message will be displayed only once.
+If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 days, and we hide the cookie policy message. If the user doesn't accept the cookie policy, we store it in the `localStorage` and we hide the cookie policy message. In both cases, the cookie policy message will be displayed only once even if the user refresh the page.
 
 
 # Collaborators
