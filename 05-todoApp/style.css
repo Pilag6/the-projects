@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to left bottom, #051937, #3c415b, #6e6f82, #a2a1ac, #d7d7d7);
+    background-image: url("https://wallpaperaccess.com/full/4076929.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 420px;
+    height: 100vh;
+
+    background: #00b894;
+    outline: 4px solid #00b894;
+    outline-offset: 10px;
+    padding: 1rem 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+form {
+    width: 420px;
+    /* margin: auto; */
+    padding: 1.5rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+
+    input {
+        padding: 1rem;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 16px;
+        flex: 1;
+    }
+    
+    button {
+        padding: 1rem 1.5rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: #00b894;
+        border: 1px solid #00b894;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow-y: scroll;
+    margin: 10px;
+    margin-bottom: 115px;
+
+    &::-webkit-scrollbar {
+        width: 0.6rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #005a48;
+        width: 100%;
+        border-radius: 0.2rem;
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+
+    li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        background: #fff;
+        width: 100%;
+        padding: 1.5rem;
+        
+
+        span {
+            flex: 1;
+        }
+    
+        i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    
+        div {
+            margin-left: auto;
+        }
+    }
+}
+
+.checked span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+
+@media only screen and (min-width: 700px) {
+    body {
+        padding: 1.2rem
+    }
+
+    .container {
+        height: 80vh;
+    }
+}
+

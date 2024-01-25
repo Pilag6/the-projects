@@ -31,7 +31,7 @@ export const cardsInfo = [
     {
         id: 4,
         name: "To-Do App",
-        description: `Comming soon!`,
+        description: `<em>To-Do App</em> developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>localStorage</code> method to store and retrieve data from the browser. We also learn how to use <code>matches</code>, <code>closest</code> and <code>contains</code> methods to respond to events.`,
         image: "./assets/todo.webp",
         url: "./05-todoApp/index.html",
     },
