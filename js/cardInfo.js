@@ -49,4 +49,11 @@ export const cardsInfo = [
         image: "./assets/cookiesPolicy.webp",
         url: "./07-cookiePolicy/index.html",
     },
+    {
+        id: 7,
+        name: "Words Counter Pro",
+        description: `Comming`,
+        image: "./assets/words-counter-pro.webp",
+        url: "./08-wordsCounter/index.html",
+    },
 ];

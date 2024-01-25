@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #9dc99a;
+    --gray-color: #333;
+    --white-color: #e3e3e3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+body {
+    font-family: "Courier Prime", monospace;
+    background-image: linear-gradient(
+        to left bottom,
+        #006c75,
+        #2d8480,
+        #509b89,
+        #75b291,
+        #9dc99a
+    );
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wordsCounter-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid var(--primary-color); */
+    /* outline: 5px solid var(--primary-color);
+    outline-offset: 10px; */
+    padding: 4rem 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+        rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+        rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    .main-title {
+        width: 500px;
+        background: var(--primary-color);
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+            rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+            rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+            rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+        h1 {
+            padding-left: 5px;
+            text-align: center;
+            font-size: 2rem;
+            color: var(--white-color);
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .buttons-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        .btns {
+            width: 50px;
+            height: 50px;
+            aspect-ratio: 1;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            background-color: var(--primary-color);
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+                rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+                rgba(0, 0, 0, 0.07) 0px 8px 16px,
+                rgba(0, 0, 0, 0.07) 0px 16px 32px,
+                rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 0.5rem;
+            
+
+            &:hover{
+                background-color: #e0e0e0;
+            }
+
+            i {
+                font-size: 1.3rem;
+                color: var(--gray-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                
+            }
+
+            .fa-u {
+                text-decoration: underline;
+            }
+
+            .fa-i {
+                font-style: italic;
+            }
+
+
+        }
+    }
+
+    .textarea-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 4rem;
+
+        textarea {
+            width: 700px;
+            margin: auto;
+            height: 300px;
+            padding: 2rem;
+            border: none;
+            background-color: var(--white-color);
+            border-radius: 5px;
+            resize: none;
+            outline: none;
+            font-size: 1rem;
+            color: #333;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+                rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+                rgba(0, 0, 0, 0.07) 0px 8px 16px,
+                rgba(0, 0, 0, 0.07) 0px 16px 32px,
+                rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+    }
+
+    .results-container {
+        width: 700px;
+
+        .results {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            padding: 1rem 0;
+            border-radius: 5px;
+            resize: none;
+            outline: none;
+            font-size: 1rem;
+            color: #333;
+
+            p {
+                font-weight: bold;
+                background-color: var(--white-color);
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                width: 125px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                flex-direction: column;
+
+                span {
+                    font-size: 1.5rem;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+h1 {
+    width: 475px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--white-color);
+    border-width: 4px;
+    animation: typing 3s steps(40) 1s 1 alternate both, blink .5s step-end infinite alternate;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .activeBg {
+    background-color: #e0e0e0 !important;
+    outline: 1px solid var(--gray-color) !important;
+  }
+
+.font-family {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.font-size {
+    font-size: 1.5rem !important;
+}
+
+.bold {
+    font-weight: bold;
+    
+}
+
+.italic {
+    font-style: italic;
+    
+}
+
+.underline {
+    text-decoration: underline;
+    
+}
+
+.left {
+    text-align: left;
+    
+}
+
+.center {
+    text-align: center;
+    
+}
+
+.right {
+    text-align: right;
+    
+}
+
+.justify {
+    text-align: justify;
+    
+}
+
+.undo {
+    text-decoration: none;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+}
+
+
