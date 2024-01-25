@@ -74,6 +74,10 @@ In this project we explore the `localStorage` and `CookieStorage` to create a co
 
 If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 days, and we hide the cookie policy message. If the user doesn't accept the cookie policy, we store it in the `localStorage` and we hide the cookie policy message. In both cases, the cookie policy message will be displayed only once even if the user refresh the page.
 
+## 8 - Words Counter Pro | Comming soon!
+![words-counter](https://github.com/Pilag6/the-projects/assets/79191808/e2d34b3d-5d46-4d73-80e7-02107245773e)
+
+
 ---
 
 # Collaborators
