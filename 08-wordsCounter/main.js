@@ -68,27 +68,42 @@ textarea.addEventListener("input", () => {
 
     // Twitter
 
-    const socialCounter = [
-        { element: twitter, limit: 280 },
-        { element: facebook, limit: 5000 },
-        { element: instagram, limit: 2200 },
-        { element: linkedIn, limit: 3000 }
-    ];
+    twitter.textContent = 280 - text.length;
+    facebook.textContent = 5000 - text.length;
+    instagram.textContent = 2200 - text.length;
+    linkedIn.textContent = 3000 - text.length;
 
-    socialCounter.forEach(counter => {
-        const { element, limit } = counter;
-        const remainingChars = limit - text.length;
+    if (text.length > 280) {
+        twitter.style.color = "#F4212E";
+    } else if (text.length > 260) {
+        twitter.style.color = "#FFD400";
+    } else {
+        twitter.style.color = "#e3e3e3";
+    }
 
-        element.textContent = remainingChars;
+    if (text.length > 5000) {
+        facebook.style.color = "#F4212E";
+    } else if (text.length > 4800) {
+        facebook.style.color = "#FFD400";
+    } else {
+        facebook.style.color = "#e3e3e3";
+    }
 
-        if (text.length > limit) {
-            element.style.color = "#F4212E";
-        } else if (text.length > limit - 200) {
-            element.style.color = "#FFD400";
-        } else {
-            element.style.color = "#e3e3e3";
-        }
-    });
+    if (text.length > 2200) {
+        instagram.style.color = "#F4212E";
+    } else if (text.length > 2000) {
+        instagram.style.color = "#FFD400";
+    } else {
+        instagram.style.color = "#e3e3e3";
+    }
+
+    if (text.length > 3000) {
+        linkedIn.style.color = "#F4212E";
+    } else if (text.length > 2800) {
+        linkedIn.style.color = "#FFD400";
+    } else {
+        linkedIn.style.color = "#e3e3e3";
+    }
 });
 
 // Buttons
