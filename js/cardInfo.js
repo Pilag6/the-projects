@@ -52,7 +52,7 @@ export const cardsInfo = [
     {
         id: 7,
         name: "Words Counter Pro",
-        description: `Comming`,
+        description: `This <em>Word Counter</em> is a comprehensive implementation using only <strong>Vanilla JavaScript</strong>. We explore updating various properties of multiple DOM elements simultaneously whenever the user inputs text into the <code>textarea</code>.`,
         image: "./assets/words-counter-pro.webp",
         url: "./08-wordsCounter/index.html",
     },
