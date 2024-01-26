@@ -4,11 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Words Counter Pro</title>
-        <meta name="description" content="" />
+        <meta
+            name="description"
+            content="Discover the power of precision with our online word counter tool! Accurately count words, characters, sentences, and paragraphs effortlessly. Whether you're a writer, student, or content creator, track your text metrics with ease. Plus, get instant insights into reading time, ensuring your content is perfectly tailored for your audience. Enhance your writing efficiency and clarity – start counting with us today!"
+        />
 
         <link rel="stylesheet" href="style.css" />
 
-        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
 
         <!-- Google Fonts -->
 
@@ -28,36 +31,90 @@
         />
     </head>
     <body>
+        <a class="go-home" href="../index.html"
+            ><i class="fa-solid fa-arrow-turn-up"></i> Go Home!</a
+        >
         <div class="wordsCounter-container">
+            <!-- TITLE -->
             <section class="main-title"><h1>Words Counter Pro.</h1></section>
+
+            <!-- BUTTONS -->
             <section class="buttons-container">
-                <button title="Font" class="btns btn-1" id="fontFamily"><i class="fa-solid fa-font"></i></button>
-                <button title="Size" class="btns btn-2" ><i class="fa-solid fa-text-height"></i></button>
-                <button title="Text Bold" class="btns btn-3"><i class="fa-solid fa-b"></i></button>
-                <button title="Text Italic" class="btns btn-4"><i class="fa-solid fa-i"></i></button>
-                <button title="Text Underline" class="btns btn-5"><i class="fa-solid fa-u"></i></button>
-                <button title="Text Left" class="btns btn-6"><i class="fa-solid fa-align-left"></i></button>
-                <button title="Text Center" class="btns btn-7"><i class="fa-solid fa-align-center"></i></button>
-                <button title="Text Right" class="btns btn-8"><i class="fa-solid fa-align-right"></i></button>
-                <button title="Text Justify" class="btns btn-9"><i class="fa-solid fa-align-justify"></i></button>
-                <button title="Reset Styles" class="btns btn-10"><i class="fa-solid fa-rotate-left"></i></button>
-                <button title="Copy Text" class="btns btn-11"><i class="fa-regular fa-copy"></i></button>
-                <button title="Delete Text" class="btns btn-12"><i class="fa-solid fa-trash-can"></i></button>
+                <button title="Font" class="btns btn-1" id="fontFamily">
+                    <i class="fa-solid fa-font"></i>
+                </button>
+                <button title="Size" class="btns btn-2">
+                    <i class="fa-solid fa-text-height"></i>
+                </button>
+                <button title="Text Bold" class="btns btn-3">
+                    <i class="fa-solid fa-b"></i>
+                </button>
+                <button title="Text Italic" class="btns btn-4">
+                    <i class="fa-solid fa-i"></i>
+                </button>
+                <button title="Text Underline" class="btns btn-5">
+                    <i class="fa-solid fa-u"></i>
+                </button>
+                <button title="Text Left" class="btns btn-6">
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+                <button title="Text Center" class="btns btn-7">
+                    <i class="fa-solid fa-align-center"></i>
+                </button>
+                <button title="Text Right" class="btns btn-8">
+                    <i class="fa-solid fa-align-right"></i>
+                </button>
+                <button title="Text Justify" class="btns btn-9">
+                    <i class="fa-solid fa-align-justify"></i>
+                </button>
+                <button title="Reset Styles" class="btns btn-10">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+                <button title="Copy Text" class="btns btn-11">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+                <button title="Delete Text" class="btns btn-12">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
             </section>
+
+            <!-- TEXTAREA -->
             <section class="textarea-container">
                 <textarea autofocus></textarea>
             </section>
+
+            <!-- RESULTS -->
             <section class="results-container">
                 <div class="results">
-                    <p id="words"><span>0</span> Words </p>
-                    <p id="chars"><span>0</span> Characters </p>
-                    <p id="sentences"><span>0</span> Sentences </p>
-                    <p id="paragraphs"><span>0</span> Paragraphs </p>
-                    <p id="reading-time"><span>0</span> Read Time </p>
+                    <p id="words"><span>0</span> Words</p>
+                    <p id="chars"><span>0</span> Characters</p>
+                    <p id="sentences"><span>0</span> Sentences</p>
+                    <p id="paragraphs"><span>0</span> Paragraphs</p>
+                    <p id="reading-time"><span>0</span> Read Time</p>
                     <!-- <p id="avgWord">Avg Word length: <span>0</span></p> -->
                     <!-- <p id="avgSentence">Avg Sentence lenght: <span>0</span></p> -->
                 </div>
             </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="twitter social">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <p><span>280</span>/280</p>
+                </div>
+                <div class="facebook social">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <p><span>5000</span>/5000</p>
+                </div>
+                <div class="instagram social">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <p><span>2200</span>/2200</p>
+                </div>
+                <div class="linkedIn social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p><span>3000</span>/3000</p>
+                </div>
+            </footer>
         </div>
 
         <script type="module" src="main.js"></script>

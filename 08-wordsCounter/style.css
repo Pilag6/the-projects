@@ -27,8 +27,6 @@
     background: #555;
 }
 
-
-
 body {
     font-family: "Courier Prime", monospace;
     background-image: linear-gradient(
@@ -48,6 +46,30 @@ body {
     gap: 1rem;
 }
 
+.go-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #131212;
+    background-color: #f0db4f;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+
+    &:hover {
+        background-color: #131212;
+        color: #f0db4f;
+    }
+
+    i {
+        rotate: -90deg;
+        margin-right: 0.5rem;
+    }
+}
+
 .wordsCounter-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -57,7 +79,7 @@ body {
     /* border: 1px solid var(--primary-color); */
     /* outline: 5px solid var(--primary-color);
     outline-offset: 10px; */
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
         rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
@@ -106,9 +128,8 @@ body {
             cursor: pointer;
             transition: all 0.3s ease-in-out;
             margin-bottom: 0.5rem;
-            
 
-            &:hover{
+            &:hover {
                 background-color: #e0e0e0;
             }
 
@@ -118,8 +139,6 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                
             }
 
             .fa-u {
@@ -129,8 +148,6 @@ body {
             .fa-i {
                 font-style: italic;
             }
-
-
         }
     }
 
@@ -196,6 +213,71 @@ body {
             }
         }
     }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+
+        .social {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            width: 160px;
+            background: #509b89;
+
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+                rgba(255, 255, 255, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+                rgba(255, 255, 255, 0.07) 0px 8px 16px,
+                rgba(255, 255, 255, 0.07) 0px 16px 32px,
+                rgba(255, 255, 255, 0.07) 0px 32px 64px;
+
+            i {
+                color: var(--white-color);
+                font-size: 1rem;
+                transition: all 0.3s ease-in-out;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                padding: 0.5rem;
+                background-color: var(--white-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            i.fa-square-x-twitter {
+                color: #000000;
+            }
+            i.fa-square-facebook {
+                color: #1877f2;
+            }
+
+            i.fa-square-instagram {
+                color: #c32aa3;
+            }
+
+            i.fa-linkedin {
+                color: #0a66c2;
+            }
+
+            p {
+                color: var(--white-color);
+                font-size: 1.1rem;
+                text-align: right;
+                width: 100%;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }
 h1 {
     width: 475px;
@@ -203,7 +285,8 @@ h1 {
     overflow: hidden;
     border-right: 2px solid var(--white-color);
     border-width: 4px;
-    animation: typing 3s steps(40) 1s 1 alternate both, blink .5s step-end infinite alternate;
+    animation: typing 3s steps(40) 1s 1 alternate both,
+        blink 0.5s step-end infinite alternate;
 }
 @keyframes typing {
     from {
@@ -213,18 +296,17 @@ h1 {
 
 @keyframes blink {
     50% {
-      border-color: transparent
+        border-color: transparent;
     }
-  }
+}
 
-  .activeBg {
+.activeBg {
     background-color: #e0e0e0 !important;
     outline: 1px solid var(--gray-color) !important;
-  }
+}
 
 .font-family {
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .font-size {
@@ -233,37 +315,30 @@ h1 {
 
 .bold {
     font-weight: bold;
-    
 }
 
 .italic {
     font-style: italic;
-    
 }
 
 .underline {
     text-decoration: underline;
-    
 }
 
 .left {
     text-align: left;
-    
 }
 
 .center {
     text-align: center;
-    
 }
 
 .right {
     text-align: right;
-    
 }
 
 .justify {
     text-align: justify;
-    
 }
 
 .undo {
@@ -271,5 +346,3 @@ h1 {
     font-family: "Courier Prime", monospace;
     font-weight: 400;
 }
-
-
