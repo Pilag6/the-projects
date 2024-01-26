@@ -66,7 +66,7 @@ textarea.addEventListener("input", () => {
 
     readingTime.textContent = readingTimeCount + " min";
 
-    // Twitter
+    // SOCIAL MEDIA COUNTER
 
     twitter.textContent = 280 - text.length;
     facebook.textContent = 5000 - text.length;
@@ -83,7 +83,7 @@ textarea.addEventListener("input", () => {
 
     if (text.length > 5000) {
         facebook.style.color = "#F4212E";
-    } else if (text.length > 4800) {
+    } else if (text.length > 4980) {
         facebook.style.color = "#FFD400";
     } else {
         facebook.style.color = "#e3e3e3";
@@ -91,7 +91,7 @@ textarea.addEventListener("input", () => {
 
     if (text.length > 2200) {
         instagram.style.color = "#F4212E";
-    } else if (text.length > 2000) {
+    } else if (text.length > 2180) {
         instagram.style.color = "#FFD400";
     } else {
         instagram.style.color = "#e3e3e3";
@@ -99,7 +99,7 @@ textarea.addEventListener("input", () => {
 
     if (text.length > 3000) {
         linkedIn.style.color = "#F4212E";
-    } else if (text.length > 2800) {
+    } else if (text.length > 2980) {
         linkedIn.style.color = "#FFD400";
     } else {
         linkedIn.style.color = "#e3e3e3";
@@ -191,13 +191,25 @@ copy.addEventListener("click", () => {
 });
 
 trash.addEventListener("click", () => {
-    textarea.value = "";
-    words.textContent = 0;
-    characters.textContent = 0;
-    sentences.textContent = 0;
-    paragraphs.textContent = 0;
-    avgWord.textContent = 0;
-    avgSentence.textContent = 0;
-    readingTime.textContent = 0;
-    twitter.textContent = 280;
+    // textarea.value = "";
+    // words.textContent = 0;
+    // characters.textContent = 0;
+    // sentences.textContent = 0;
+    // paragraphs.textContent = 0;
+    // avgWord.textContent = 0;
+    // avgSentence.textContent = 0;
+    // readingTime.textContent = 0;
+    // twitter.textContent = 280;
+    // facebook.textContent = 5000;
+    // instagram.textContent = 2200;
+    // linkedIn.textContent = 3000;
+
+    // left.classList.remove("activeBg");
+    // center.classList.remove("activeBg");
+    // right.classList.remove("activeBg");
+    // justify.classList.remove("activeBg");
+
+
+    location.reload();
+
 });
