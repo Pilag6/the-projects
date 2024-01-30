@@ -113,6 +113,20 @@ If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 
         <div>Godwin Onah</div>
         <sub>:white_check_mark:</sub>
       </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/FatimaBadaoui" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138123037?v=4" alt="Fatima" />
+        </a><br />
+        <div>Fatima Badaoui</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/chimikoo" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/62369195?v=4" alt="Pelle" />
+        </a><br />
+        <div>Pelle Johansson</div>
+        <sub>:white_check_mark:</sub>
+      </td>
     </tr>
   </tbody>
 </table>
