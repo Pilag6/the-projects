@@ -3,9 +3,9 @@ const words = document.querySelector("#words span");
 const characters = document.querySelector("#chars span");
 const sentences = document.querySelector("#sentences span");
 const paragraphs = document.querySelector("#paragraphs span");
-const avgWord = document.querySelector("#avgWord span");
-const avgSentence = document.querySelector("#avgSentence span");
 const readingTime = document.querySelector("#reading-time span");
+
+const resultP = document.querySelectorAll(".results p span");
 
 // Buttons
 const btns = document.querySelectorAll(".btns");
@@ -29,6 +29,7 @@ const twitter = document.querySelector(".twitter p span");
 const facebook = document.querySelector(".facebook p span");
 const instagram = document.querySelector(".instagram p span");
 const linkedIn = document.querySelector(".linkedIn p span");
+const social = document.querySelectorAll(".social p span");
 
 // Events
 textarea.addEventListener("input", () => {
@@ -55,7 +56,7 @@ textarea.addEventListener("input", () => {
     // Paragraphs
 
     const paragraphsCount = text
-        .split("\n\n")
+        .split("\n")
         .filter((paragraph) => paragraph !== "").length;
 
     paragraphs.textContent = paragraphsCount;
@@ -133,40 +134,36 @@ underline.addEventListener("click", () => {
     underline.classList.toggle("activeBg");
 });
 
-left.addEventListener("click", () => {
-    textarea.classList.remove("center", "right", "justify");
-    textarea.classList.toggle("left");
-    left.classList.toggle("activeBg");
-    center.classList.remove("activeBg");
-    right.classList.remove("activeBg");
-    justify.classList.remove("activeBg");
-});
+function alignText(textAlignment) {
+    const alignments = ["left", "center", "right", "justify"];
+    const buttons = [left, center, right, justify];
+
+    alignments.forEach((alignment, index) => {
+        const button = buttons[index];
+        if (textAlignment === alignment) {
+            textarea.classList.add(alignment);
+            button.classList.add("activeBg");
+        } else {
+            textarea.classList.remove(alignment);
+            button.classList.remove("activeBg");
+        }
+    });
+}
 
 center.addEventListener("click", () => {
-    textarea.classList.remove("left", "right", "justify");
-    textarea.classList.toggle("center");
-    center.classList.toggle("activeBg");
-    left.classList.remove("activeBg");
-    right.classList.remove("activeBg");
-    justify.classList.remove("activeBg");
+    alignText("center");
+});
+
+left.addEventListener("click", () => {
+    alignText("left");
 });
 
 right.addEventListener("click", () => {
-    textarea.classList.remove("left", "center", "justify");
-    textarea.classList.toggle("right");
-    right.classList.toggle("activeBg");
-    left.classList.remove("activeBg");
-    center.classList.remove("activeBg");
-    justify.classList.remove("activeBg");
+    alignText("right");
 });
 
 justify.addEventListener("click", () => {
-    textarea.classList.remove("left", "center", "right");
-    textarea.classList.toggle("justify");
-    justify.classList.toggle("activeBg");
-    left.classList.remove("activeBg");
-    center.classList.remove("activeBg");
-    right.classList.remove("activeBg");
+    alignText("justify");
 });
 
 undo.addEventListener("click", () => {
@@ -191,25 +188,25 @@ copy.addEventListener("click", () => {
 });
 
 trash.addEventListener("click", () => {
-    // textarea.value = "";
-    // words.textContent = 0;
-    // characters.textContent = 0;
-    // sentences.textContent = 0;
-    // paragraphs.textContent = 0;
-    // avgWord.textContent = 0;
-    // avgSentence.textContent = 0;
-    // readingTime.textContent = 0;
-    // twitter.textContent = 280;
-    // facebook.textContent = 5000;
-    // instagram.textContent = 2200;
-    // linkedIn.textContent = 3000;
+    textarea.value = "";
+    textarea.classList.remove("center", "right", "justify");
 
-    // left.classList.remove("activeBg");
-    // center.classList.remove("activeBg");
-    // right.classList.remove("activeBg");
-    // justify.classList.remove("activeBg");
+    resultP.forEach((item) => {
+        item.textContent = 0;
+    });
 
+    twitter.textContent = 280;
+    facebook.textContent = 5000;
+    instagram.textContent = 2200;
+    linkedIn.textContent = 3000;
 
-    location.reload();
+    social.forEach((item) => {
+        item.style.color = "#e3e3e3";
+    });
 
+    btns.forEach((btn) => {
+        btn.classList.remove("activeBg");
+    });
+
+    // location.reload();
 });
