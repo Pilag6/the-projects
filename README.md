@@ -77,8 +77,10 @@ If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 
 ## 8 - Words Counter Pro | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/08-wordsCounter)
 ![wordsCOunterPro](https://github.com/Pilag6/the-projects/assets/79191808/f1511742-59ed-433a-af45-06e1d7bb2bf9)
 
+This **Word Counter** is a comprehensive implementation using only **Vanilla JavaScript**. We explore updating various properties of multiple DOM elements simultaneously whenever the user inputs text into the `textarea`.
 
-This Word Counter is a comprehensive implementation using only Vanilla JavaScript. We explore updating various properties of multiple DOM elements simultaneously whenever the user inputs text into the textarea.
+We also learn how to use the `split()` method to split a string into an array of substrings, and how to use the `filter()` method. We also explore the `forEach()` method to iterate over the array.
+
 
 ---
 

@@ -56,4 +56,11 @@ export const cardsInfo = [
         image: "./assets/words-counter-pro.webp",
         url: "./08-wordsCounter/index.html",
     },
+    {
+        id: 8,
+        name: "BMI Calculator",
+        description: `Coming soon!`,
+        image: "./assets/bmiCalc.webp",
+        url: "./09-bmiCalc/index.html",
+    },
 ];
