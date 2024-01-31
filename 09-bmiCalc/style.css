@@ -1,0 +1,23 @@
+.shadowBox {
+    box-shadow: 10px 10px 20px rgba(17, 18, 19, 0.25),
+        -5px -5px 10px rgba(255, 255, 255, 0.18);
+}
+
+#age::-webkit-outer-spin-button,
+#age::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#weight::-webkit-inner-spin-button, 
+#weight::-webkit-outer-spin-button,
+#height::-webkit-inner-spin-button,
+#height::-webkit-outer-spin-button {
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 600px){
+  h1 {
+    display: none;
+
+  }
+}

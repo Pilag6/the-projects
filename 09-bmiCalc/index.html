@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title-->
+        <title>BMI</title>
+        <meta name="description" content="Descripción" />
+
+        <link rel="shortcut icon" href="./imgs/faviconBMI.png" type="image/x-icon" />
+
+        <!-- Stylesheets CSS-->
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <!-- Tailwind CSS-->
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-[#314049]">
+        <div class="flex justify-center items-center h-screen">
+            <div
+                class="bg-[#314049] p-8 rounded-m w-[430px] rounded-2xl shadowBox"
+            >
+                <h1 class="text-3xl text-center mb-4 font-bold text-white">
+                    BMI Calculator
+                </h1>
+
+                <!-- GENDER -->
+                <section class="mb-4 flex justify-between">
+                    <div
+                        class="flex justify-center items-center flex-col gap-y-2 bg-[#314049] w-[166px] p-5 rounded-2xl shadowBox"
+                    >
+                        <img src="./imgs/MaleUser.png" alt="" />
+                        <p class="text-white font-bold">Male</p>
+                        <input
+                            id="teal-radio"
+                            type="radio"
+                            class="w-5 h-5 focus:ring-3 text-teal-600"
+                            name="myRadios"
+                            value="1"
+                        />
+                    </div>
+
+                    <div
+                        class="flex justify-center items-center flex-col gap-y-2 bg-[#314049] w-[166px] p-5 rounded-2xl shadowBox"
+                    >
+                        <img src="./imgs/FemaleUser.png" alt="" />
+                        <p class="text-white font-bold">Female</p>
+                        <input
+                            type="radio"
+                            class="w-5 h-5 focus:ring-3"
+                            name="myRadios"
+                            value="2"
+                        />
+                    </div>
+                </section>
+
+                <!-- AGE -->
+                <section class="mb-4">
+                    <label
+                        for="age"
+                        class="block text-center text-white font-bold"
+                        >AGE</label
+                    >
+                    <div class="flex items-center justify-center">
+                        <button id="age-minus" class="px-4 py-2">
+                            <svg
+                                width="40px"
+                                height="40px"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="24" height="24" fill="none" />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM8 12C8 11.4477 8.44772 11 9 11H15C15.5523 11 16 11.4477 16 12C16 12.5523 15.5523 13 15 13H9C8.44772 13 8 12.5523 8 12Z"
+                                    fill="#fff"
+                                />
+                            </svg>
+                        </button>
+                        <input
+                            type="number"
+                            id="age"
+                            class="border border-gray-300 rounded-none px-4 py-2 w-[150px] text-center text-2xl font-bold text-[#40396E]"
+                            min="1"
+                            max="120"
+                            value="25"
+                        />
+                        <button id="age-plus" class="px-4 py-2">
+                            <svg
+                                width="40px"
+                                height="40px"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="24" height="24" fill="none" />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M13 9C13 8.44772 12.5523 8 12 8C11.4477 8 11 8.44772 11 9V11H9C8.44772 11 8 11.4477 8 12C8 12.5523 8.44772 13 9 13H11V15C11 15.5523 11.4477 16 12 16C12.5523 16 13 15.5523 13 15V13H15C15.5523 13 16 12.5523 16 12C16 11.4477 15.5523 11 15 11H13V9ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
+                                    fill="#fff"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- WEIGHT AND HEIGHT -->
+                <section class="flex justify-around">
+                    <div class="mb-4">
+                        <label
+                            for="weight"
+                            class="block mb-2 text-white font-bold"
+                            >Weight (kg):</label
+                        >
+                        <input
+                            type="number"
+                            id="weight"
+                            class="border border-gray-300 rounded-md w-[120px] px-4 py-2 text-[#40396E] font-bold text-2xl"
+                            min="1"
+                            step="0.5"
+                            value="50"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="height"
+                            class="block mb-2 text-white font-bold"
+                            >Height (cm):</label
+                        >
+                        <input
+                            type="number"
+                            id="height"
+                            class="border border-gray-300 rounded-md w-[120px] px-4 py-2 text-[#40396E] font-bold text-2xl"
+                            min="50"
+                            step="0"
+                            value="150"
+                        />
+                    </div>
+                </section>
+
+                <!-- CALCULATE BMI -->
+                <section class="mb-4 text-center flex flex-col items-center">
+                    <label class="block mb-2 text-white font-bold text-center"
+                        >BMI:</label
+                    >
+                    <p
+                        id="bmi"
+                        class="border border-gray-300 rounded-md px-4 py-2 w-[200px] bg-gray-100 text-[#40396E] font-bold text-center text-2xl"
+                    >
+                        00.00
+                    </p>
+                </section>
+                <button
+                    id="calculate-btn"
+                    class="bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-400 to-emerald-400 text-white py-4 my-2 rounded-md font-bold text-center w-full text-xl"
+                >
+                    Calculate BMI
+                </button>
+
+                <!-- RESULT -->
+                <div id="result" class="mt-1 text-white font-bold text-center">
+                    <h2 id="resultText" class="text-3xl mb-4"></h2>
+                    <h3>Normal BMI Range: 18.5 - 24.9</h3>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
