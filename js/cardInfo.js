@@ -59,7 +59,7 @@ export const cardsInfo = [
     {
         id: 8,
         name: "BMI Calculator",
-        description: `Coming soon!`,
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>parseInt</code> and <code>parseFloat</code> methods to convert strings to numbers and how to use the <code>toFixed</code> method to round numbers to a specific number of decimal places.`,
         image: "./assets/bmiCalc.webp",
         url: "./09-bmiCalc/index.html",
     },
