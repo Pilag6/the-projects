@@ -74,9 +74,11 @@ In this project we explore the `localStorage` and `CookieStorage` to create a co
 
 If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 days, and we hide the cookie policy message. If the user doesn't accept the cookie policy, we store it in the `localStorage` and we hide the cookie policy message. In both cases, the cookie policy message will be displayed only once even if the user refresh the page.
 
-## 8 - Words Counter Pro | Comming soon!
-![words-counter](https://github.com/Pilag6/the-projects/assets/79191808/e2d34b3d-5d46-4d73-80e7-02107245773e)
+## 8 - Words Counter Pro | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/08-wordsCounter)
+![wordsCOunterPro](https://github.com/Pilag6/the-projects/assets/79191808/f1511742-59ed-433a-af45-06e1d7bb2bf9)
 
+
+This Word Counter is a comprehensive implementation using only Vanilla JavaScript. We explore updating various properties of multiple DOM elements simultaneously whenever the user inputs text into the textarea.
 
 ---
 
@@ -111,6 +113,20 @@ If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 
           <img width="108" src="https://avatars.githubusercontent.com/u/138124430?v=4" alt="Godwin " />
         </a><br />
         <div>Godwin Onah</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/FatimaBadaoui" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138123037?v=4" alt="Fatima" />
+        </a><br />
+        <div>Fatima Badaoui</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/chimikoo" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/62369195?v=4" alt="Pelle" />
+        </a><br />
+        <div>Pelle Johansson</div>
         <sub>:white_check_mark:</sub>
       </td>
     </tr>
