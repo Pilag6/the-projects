@@ -1,4 +1,4 @@
-# <img src="https://github.com/Pilag6/the-projects/assets/79191808/433f614c-5069-4d4a-b2d6-e7384edcfcf1" width=60px title="JavaScript"> THE PROJECTS | <a href="https://pilag6.github.io/the-projects/"><strong>➥ Live Demo</strong></a>
+![wordsCOunterPro](https://github.com/Pilag6/the-projects/assets/79191808/aecea1c2-a4e1-4026-a986-4e86343e494c)# <img src="https://github.com/Pilag6/the-projects/assets/79191808/433f614c-5069-4d4a-b2d6-e7384edcfcf1" width=60px title="JavaScript"> THE PROJECTS | <a href="https://pilag6.github.io/the-projects/"><strong>➥ Live Demo</strong></a>
 
 
 Welcome to **The Projects** – your go-to destination for mastering the art of web development through hands-on practice with **Vanilla JavaScript!** 
@@ -75,7 +75,8 @@ In this project we explore the `localStorage` and `CookieStorage` to create a co
 If the user accepts the cookie policy, we store it in the `CookieStorage`for 30 days, and we hide the cookie policy message. If the user doesn't accept the cookie policy, we store it in the `localStorage` and we hide the cookie policy message. In both cases, the cookie policy message will be displayed only once even if the user refresh the page.
 
 ## 8 - Words Counter Pro | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/08-wordsCounter)
-![words-counter](https://github.com/Pilag6/the-projects/assets/79191808/e2d34b3d-5d46-4d73-80e7-02107245773e)
+![wordsCOunterPro](https://github.com/Pilag6/the-projects/assets/79191808/f1511742-59ed-433a-af45-06e1d7bb2bf9)
+
 
 This Word Counter is a comprehensive implementation using only Vanilla JavaScript. We explore updating various properties of multiple DOM elements simultaneously whenever the user inputs text into the textarea.
 
