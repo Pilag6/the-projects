@@ -81,6 +81,11 @@ This **Word Counter** is a comprehensive implementation using only **Vanilla Jav
 
 We also learn how to use the `split()` method to split a string into an array of substrings, and how to use the `filter()` method. We also explore the `forEach()` method to iterate over the array.
 
+## 9 - BMI Calculator | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/09-bmiCalc)
+
+![bmi](https://github.com/Pilag6/the-projects/assets/79191808/20bfa560-31cb-49a8-b72f-c564af1fd4ef)
+
+In this project we learn how to use the <code>parseInt</code> and <code>parseFloat</code> methods to convert strings to numbers and how to use the <code>toFixed</code> method to round numbers to a specific number of decimal places.
 
 ---
 
