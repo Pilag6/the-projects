@@ -1,4 +1,4 @@
-![wordsCOunterPro](https://github.com/Pilag6/the-projects/assets/79191808/aecea1c2-a4e1-4026-a986-4e86343e494c)# <img src="https://github.com/Pilag6/the-projects/assets/79191808/433f614c-5069-4d4a-b2d6-e7384edcfcf1" width=60px title="JavaScript"> THE PROJECTS | <a href="https://pilag6.github.io/the-projects/"><strong>➥ Live Demo</strong></a>
+# <img src="https://github.com/Pilag6/the-projects/assets/79191808/433f614c-5069-4d4a-b2d6-e7384edcfcf1" width=60px title="JavaScript"> THE PROJECTS | <a href="https://pilag6.github.io/the-projects/"><strong>➥ Live Demo</strong></a>
 
 
 Welcome to **The Projects** – your go-to destination for mastering the art of web development through hands-on practice with **Vanilla JavaScript!** 
