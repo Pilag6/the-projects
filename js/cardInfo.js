@@ -70,4 +70,11 @@ export const cardsInfo = [
         image: "https://bit.ly/3w2Sj52",
         url: "./10-stopwatch/index.html",
     },
+    {
+        id: 10,
+        name: "Weather API",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>fetch()</code> and solve <code>Promises</code> methods to <code>GET</code> some information that we are available from an outside API and render them in our page.`,
+        image: "./assets/weather-api.png",
+        url: "./11-weatherApi/index.html",
+    },
 ];
