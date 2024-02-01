@@ -63,4 +63,11 @@ export const cardsInfo = [
         image: "./assets/bmiCalc.webp",
         url: "./09-bmiCalc/index.html",
     },
+    {
+        id: 9,
+        name: "Stopwatch",
+        description: `Coming soon!`,
+        image: "",
+        url: "",
+    },
 ];
