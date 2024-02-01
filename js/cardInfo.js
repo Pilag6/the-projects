@@ -67,7 +67,7 @@ export const cardsInfo = [
         id: 9,
         name: "Stopwatch",
         description: `Coming soon!`,
-        image: "https://bit.ly/3HI8LKs",
+        image: "https://bit.ly/3w2Sj52",
         url: "./10-stopwatch/index.html",
     },
 ];
