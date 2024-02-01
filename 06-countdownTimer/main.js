@@ -1,4 +1,6 @@
-const targetDate = new Date("Jan 16, 2024 09:23:00").getTime();
+const targetDate = new Date("Feb 16, 2024 09:23:00");
+
+console.log(targetDate);
 
 const jsConfetti = new JSConfetti();
 
@@ -54,17 +56,14 @@ let myfunc = setInterval(function () {
             document.querySelector("#end").innerHTML = "WE ARE OPEN NOW!";
             document.querySelector("#end").style.display = "block";
             document.querySelector("#end").classList.add("animate__bounceIn");
-            
         }, 2000);
 
         setTimeout(function () {
             jsConfetti.addConfetti({
-                emojis: ["💫", "🥳", "✨", "🍀", "🎉", '🦚', '🌈', '☄️', '🎈'],
+                emojis: ["💫", "🥳", "✨", "🍀", "🎉", "🦚", "🌈", "☄️", "🎈"],
                 emojiSize: 10,
                 confettiNumber: 1200,
             });
         }, 2000);
-
-        
     }
 }, 1000);
