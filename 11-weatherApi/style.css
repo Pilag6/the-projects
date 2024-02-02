@@ -5,13 +5,19 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
     color: #fff;
-    background: linear-gradient(to bottom, #0ee8e2, #0a5025);
+    background-image: url("https://bit.ly/3Srk0M6");
     background-repeat: no-repeat;
-    min-height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     /* align-items: center; */
 }
 
@@ -23,53 +29,74 @@ img {
 
 .container {
     width: 500px;
-    height: fit-content;
-    margin: 1rem auto;
-    padding: 2rem;
-    background: linear-gradient(45deg, #04f24b 5%, #00d4ff 40%, #02badf 100%);
+    padding: 2rem 0;
+    overflow: hidden;
+
+    background: linear-gradient(to bottom, #0d2143d5, #5c045292);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
+    border-radius: 10px;
+    margin: 0 auto;
 
     h1 {
         text-align: center;
         margin-bottom: 2rem;
+
+        span {
+            color: #b901a3;
+            text-decoration: underline #fff 2px;
+            text-underline-offset: 10px;
+            text-shadow: 1px 1px 20px #000;
+        }
     }
 
     .search {
         width: 80%;
-        margin: 1rem auto;
+        margin: 0rem auto;
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        /* flex-direction: column; */
 
         #city {
-            padding: 10px;
+            padding: 0.8rem;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 1rem;
 
-            width: 100%;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            width: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             outline: none;
             border: none;
 
             &:focus {
-                outline: 2px solid #4978f8;
+                outline: 2px solid #b901a3;
             }
         }
 
         #my-button {
             padding: 10px 20px;
             border: transparent;
-            background-color: #4978f8;
-            
+            background-color: #b901a3;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            letter-spacing: 1px;
+
             color: #fff;
-            width: 100%;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            width: 40%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
             &:hover {
                 cursor: pointer;
-                background-color: #025a6a;
+                background-color: #970283;
                 box-shadow: none;
             }
         }
@@ -78,11 +105,17 @@ img {
 
 .weather {
     min-width: 400px;
-    padding-top: 1rem;
 
     h2 {
         text-align: center;
         font-size: 3rem;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: -10px;
     }
 
     .weather-info {
@@ -97,18 +130,30 @@ img {
         }
 
         .weather-icon {
-            width: 300px;
-            margin-bottom: 1rem;
+            width: 150px;
+            margin-bottom: 1.5rem;
+        }
+
+        .weather-sunrise-sunset {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
 
         .temp {
             font-size: 6rem;
-            margin-bottom: 2rem;
+            margin: 2rem;
         }
 
         .temperatures {
             display: flex;
             gap: 1rem;
+
+            .temperatures-minmax {
+                background-color: #5c0452da;
+                padding: 0.5rem 1.5rem;
+                border-radius: 25px;
+            }
         }
 
         p {
@@ -117,9 +162,21 @@ img {
         }
 
         .wind-humidity {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
             p {
                 text-align: justify;
+                font-size: 1.2rem;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    .container {
+        height: 100vh;
+        border-radius: 0px;
+        margin: 0 auto;
     }
 }

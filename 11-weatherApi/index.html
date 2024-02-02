@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>My Weather Api</h1>
+      <h1>My <span>Weather</span> Api</h1>
       <form class="search" id="search">
         <input
           type="text"
@@ -23,17 +23,24 @@
 
       <div class="weather">
         <h2>Chivilcoy</h2>
+        <h3>AR</h3>
         <div class="weather-info">
             <div class="weather-icon">
                 <img src="./utilities/images/cloud-sun.png" alt = "" />
             </div>
-            <div>
+
+            <div class="temp-container">
                 <p class="temp">25°C</p>
                 <div class="temperatures">
-                    <p><strong>Min:</strong> 22°C</p>
-                    <p><strong>Max:</strong> 28°C</p>
+                    <p class="temperatures-minmax"><strong>Min:</strong> 22°C</p>
+                    <p class="temperatures-minmax"><strong>Max:</strong> 28°C</p>
                 </div>
             </div>
+            <div class="weather-sunrise-sunset">
+              <p><strong>Sunrise:</strong> 05:56</p>
+              <p><strong>Sunset:</strong> 21:12</p>
+              
+          </div>
             <div class="wind-humidity">
                 <p><strong>Humidity:</strong> 65%</p>
                 <p><strong>Wind speed:</strong> 7.5 km/h</p>
