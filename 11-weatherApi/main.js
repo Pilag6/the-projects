@@ -17,11 +17,7 @@ async function fetchWeatherByCity(url) {
         return error;
     }
 }
-/* sys
-: 
-{type: 2, id: 2075535, country: 'GB', sunrise: 1706859501, sunset: 1706892588} 
 
-Show me the date in this format: 07:00 or 16:35*/
 function actualWeatherRender(data) {
     console.log(data.weather[0].main);
     weatherDiv.innerHTML = `
