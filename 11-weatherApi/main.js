@@ -1,4 +1,5 @@
-const apiKey = "11e94ab942a5ebae73d6de6b4b8de110";
+import apiKey from "./api-key.js";
+
 const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric&q=`;
 
 const form = document.getElementById("search");
@@ -58,3 +59,25 @@ form.addEventListener("submit", async (event) => {
     weatherDiv.innerHTML = `<h2 class="error">${data.message}</h2>`;
   }
 });
+
+/* 
+// Unix timestamp
+const timestamp = 1706770155;
+
+// Create a new Date object and pass the timestamp as milliseconds
+const date = new Date(timestamp * 1000);
+
+// Get the various components of the date and time
+const year = date.getFullYear();
+const month = date.getMonth() + 1; // Months are zero-based, so add 1
+const day = date.getDate();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+
+// Format the date and time as a string
+const formattedDateTime = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')} ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+console.log(formattedDateTime);
+
+*/
