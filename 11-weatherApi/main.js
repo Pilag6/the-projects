@@ -73,7 +73,7 @@ function actualWeatherRender(data) {
     `;
 
     if (data.weather[0].main === "Clouds") {
-        body.style.backgroundImage = "url('https://bit.ly/48PdDcB')";
+        body.style.backgroundImage = "url('https://bit.ly/49gxZeC')";
     } else if (data.weather[0].main === "Clear") {
         body.style.backgroundImage = "url('https://bit.ly/42quDnh')";
     } else if (data.weather[0].main === "Rain") {
