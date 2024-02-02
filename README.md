@@ -92,6 +92,10 @@ In this project we learn how to use the <code>parseInt</code> and <code>parseFlo
 ## 11 - Weather API | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/11-weatherApi)
 ![weatherAPP-API](https://github.com/Pilag6/the-projects/assets/79191808/027ba033-9bd1-4814-a0b1-380a1e4640c0)
 
+In this project we explore the `fetch()` method to get data from an external API and how to use the `async` and `await` keywords to handle the promise returned by the `fetch()` method.
+
+We also learn how to use the `try...catch` statement to handle errors and how to use the `then()` method to handle the promise returned by the `fetch()` method.
+
 ---
 
 # Collaborators

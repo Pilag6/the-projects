@@ -18,7 +18,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* align-items: center; */
 }
 
 img {
@@ -59,7 +58,6 @@ img {
         width: 80%;
         margin: 0rem auto;
         display: flex;
-        /* flex-direction: column; */
 
         #city {
             padding: 0.8rem;
@@ -119,7 +117,6 @@ img {
     }
 
     .weather-info {
-        /* border: 1px solid #000; */
 
         div {
             flex: 1 1 300px;
