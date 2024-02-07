@@ -87,6 +87,15 @@ We also learn how to use the `split()` method to split a string into an array of
 
 In this project we learn how to use the <code>parseInt</code> and <code>parseFloat</code> methods to convert strings to numbers and how to use the <code>toFixed</code> method to round numbers to a specific number of decimal places.
 
+## 10 - StopWatch | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/10-stopwatch)
+
+## 11 - Weather API | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/11-weatherApi)
+![weatherAPP-API](https://github.com/Pilag6/the-projects/assets/79191808/027ba033-9bd1-4814-a0b1-380a1e4640c0)
+
+In this project we explore the `fetch()` method to get data from an external API and how to use the `async` and `await` keywords to handle the promise returned by the `fetch()` method.
+
+We also learn how to use the `try...catch` statement to handle errors and how to use the `then()` method to handle the promise returned by the `fetch()` method.
+
 ---
 
 # Collaborators
@@ -99,6 +108,13 @@ In this project we learn how to use the <code>parseInt</code> and <code>parseFlo
           <img width="108" src="https://avatars.githubusercontent.com/u/138122651?v=4" alt="Akiko Luka" />
         </a><br />
         <div>Akiko Luka</div>
+        <sub>:white_check_mark:</sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/FatimaBadaoui" target="_blank">
+          <img width="108" src="https://avatars.githubusercontent.com/u/138123037?v=4" alt="Fatima" />
+        </a><br />
+        <div>Fatima Badaoui</div>
         <sub>:white_check_mark:</sub>
       </td>
        <td align="center" valign="top">
@@ -120,13 +136,6 @@ In this project we learn how to use the <code>parseInt</code> and <code>parseFlo
           <img width="108" src="https://avatars.githubusercontent.com/u/138124430?v=4" alt="Godwin " />
         </a><br />
         <div>Godwin Onah</div>
-        <sub>:white_check_mark:</sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://github.com/FatimaBadaoui" target="_blank">
-          <img width="108" src="https://avatars.githubusercontent.com/u/138123037?v=4" alt="Fatima" />
-        </a><br />
-        <div>Fatima Badaoui</div>
         <sub>:white_check_mark:</sub>
       </td>
       <td align="center" valign="top">
