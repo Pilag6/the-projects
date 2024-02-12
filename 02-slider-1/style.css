@@ -193,7 +193,7 @@ article {
         article {
             flex-direction: column;
             width: 90%;
-            height: 100%;
+            height: 100vh;
             justify-content: center;
             gap: 20px;
 

@@ -64,6 +64,16 @@ main {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .go-home {
+        top: 0px;
+        left: 0px;
+        border-radius: 0;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
 .generator {
     width: 500px;
     min-width: 350px;
