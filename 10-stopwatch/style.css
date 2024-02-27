@@ -1,73 +1,84 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(152deg, #0089fd 27%, #6dcffe 75%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Orbitron", sans-serif;
+    background-image: url("./stopwatch-bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
-  /* border: 1px solid black; */
-  width: 450px;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  background: #fff;
-  box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
-  border-radius: 5px;
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;    
+    outline: 2px solid #fff;
+    outline-offset: 10px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 .time-display {
-  /* border: 1px solid black; */
-  padding: 2rem;
-  box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
-  outline: none;
+    /* border: 1px solid black; */
+    padding: 2rem;
+    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+    outline: none;
+    width: 320px;
+    text-align: center;
+    color: #fff;
 }
 
 #timer {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .control-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .control-buttons button {
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-  user-select: none;
-  cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
 
-  background-color: #fff;
-  box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
-  transition: 0.4s;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+    background-color: #fff;
+    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    /* border-radius: 0.5rem; */
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 button:hover {
-  opacity: 0.7;
+    opacity: 0.8;
 }
 
 button:active {
-  color: #fff;
-  background-color: #2f5e7a;
+    color: #fff;
+    background-color: #2f5e7a;
 }
