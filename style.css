@@ -199,7 +199,6 @@ main {
     margin-left: 250px; /* Same as aside width */
 
     .main-titles {
-        margin-bottom: 20px;
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
         display: flex;
@@ -239,7 +238,7 @@ main {
                     font-weight: 700;
                     transition: all 0.3s ease-in-out;
                     color: #c4b240;
-                    
+
                     &:hover {
                         color: var(--black);
                         text-decoration: underline;
@@ -267,6 +266,30 @@ main {
                 object-fit: cover;
             }
         }
+    }
+
+    .filter {
+        color: white;
+        display: flex;
+        /* justify-content: center; */
+        gap: 20px;
+        padding: 20px;
+
+        buttons {
+            outline: 1px solid var(--yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .filter .filter-active {
+        background-color: var(--yellow);
+        color: var(--black);
     }
 
     .cards-container {
@@ -312,13 +335,11 @@ main {
                 width: 100%;
                 height: 180px;
                 overflow: hidden;
-                
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    
                 }
             }
 
