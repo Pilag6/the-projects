@@ -78,4 +78,11 @@ export const cardsInfo = [
         image: "./assets/weather-api.webp",
         url: "./11-weatherApi/index.html",
     },
+    {
+        id: 11,
+        name: "Virtual Drum",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>audio</code> tag and <code>kbd</code> to play sounds and how to use the <code>keydown</code> event to respond to keyboard events. We also learn how to use the <code>play()</code> methods to play sounds.`,
+        image: "https://bit.ly/43NCueY",
+        url: "./12-virtualDrum/index.html",
+    }
 ];
