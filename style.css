@@ -71,6 +71,31 @@ aside {
     display: flex;
     flex-direction: column;
     z-index: 9999;
+    transition: all 0.3s ease-in-out;
+
+    .fa-chevron-left {
+        color: var(--yellow);
+        position: absolute;
+        right: 0px;
+        bottom: 61px;
+        transform: translateY(-50%);
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 10px;
+        background-color: var(--black);
+        transition: all 0.3s ease-in-out;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--yellow);
+    }
+
+    .aside-collapse.chevron-rotate {
+        transform: rotate(180deg);
+        bottom: 81px;
+    }
 
     /*---------------
         LOGO
@@ -90,6 +115,10 @@ aside {
             font-size: 1.5rem;
             color: var(--yellow);
         }
+
+        h2.logo-hide {
+            display: none;
+        }
     }
 
     /*---------------
@@ -99,37 +128,59 @@ aside {
     .nav-links {
         padding: 20px;
 
-        li {
+        .nav-link-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             margin-bottom: 16px;
             font-size: 1.2rem;
             color: var(--white);
             font-weight: 500;
             cursor: pointer;
+            border: 1px solid var(--white);
 
-            &:hover a,
-            &:hover a i {
+            &:hover,
+            &:hover i,
+            &:hover span {
                 color: var(--black);
                 border-color: var(--black);
                 background-color: var(--yellow);
             }
 
-            a {
+            i {
+                width: 50px;
+                height: 50px;
+                border-right: 1px solid var(--white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            span {
                 display: flex;
                 align-items: center;
                 gap: 10px;
                 color: var(--white);
-                border: 1px solid var(--white);
+            }
 
-                i {
-                    width: 50px;
-                    height: 50px;
-                    border-right: 1px solid var(--white);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+            span.span-hide {
+                display: none;
             }
         }
+
+        .nav-link-item:last-child {
+            display: none;
+        }
+
+        .nav-link-item:last-child.show-link {
+            display: flex;
+            font-size: 1.8rem;
+        }
+
+    }
+
+    .nav-links-collapse {
+        padding: 10px;
     }
 
     /*---------------
@@ -141,8 +192,9 @@ aside {
         background: var(--white);
         padding: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 30px;
 
         .dark-light-mode {
             display: flex;
@@ -190,13 +242,24 @@ aside {
             .fa-github {
                 font-size: 2rem;
             }
+
+            
         }
     }
+}
+
+.github-hide {
+    display: none;
+}
+
+aside.collapse {
+    width: 70px;
 }
 
 main {
     color: var(--black);
     margin-left: 250px; /* Same as aside width */
+    transition: all 0.3s ease-in-out;
 
     .main-titles {
         padding: 20px;
@@ -271,6 +334,7 @@ main {
     .filter {
         color: white;
         display: flex;
+        flex-wrap: wrap;
         /* justify-content: center; */
         gap: 20px;
         padding: 20px;
@@ -403,6 +467,10 @@ main {
     }
 }
 
+main.main-collapse {
+    margin-left: 70px;
+}
+
 /* Media queries */
 
 @media only screen and (min-width: 1600px) {
@@ -482,28 +550,29 @@ main {
             padding: 0;
             margin-right: 20px;
 
-            li {
+            .nav-link-item {
                 margin-bottom: 0;
                 font-size: 1rem;
+                gap: 0px;
 
-                a {
+                i {
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    padding: 0;
+                }
+
+                span {
                     display: flex;
                     align-items: center;
                     gap: 5px;
                     border: none;
                     padding: 10px;
-
-                    i {
-                        width: 30px;
-                        height: 30px;
-                        border: none;
-                        padding: 0;
-                    }
                 }
             }
         }
 
-        .nav-links li:first-child {
+        .nav-links .nav-link-item:first-child {
             display: none;
         }
 
@@ -546,13 +615,7 @@ main {
         display: none;
     }
 
-    .nav-links li {
-        font-size: 0.8rem;
-    }
-
-    .nav-links li a {
-        padding: 5px;
-    }
+    
 }
 
 @media only screen and (max-width: 480px) {
