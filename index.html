@@ -72,26 +72,30 @@
     </head>
     <body>
         <aside>
+            <i class="fa-solid fa-chevron-left aside-collapse"></i>
             <section class="logo">
                 <img src="./assets/js.webp" alt="logo" draggable="false" />
                 <h2>The Projects</h2>
             </section>
 
-            <ul class="nav-links">
-                <li>
-                    <a href="#"><i class="fa-solid fa-caravan"></i>Home</a>
-                </li>
-                <li>
-                    <a href="#"
-                        ><i class="fa-solid fa-folder-open"></i>Projects</a
-                    >
-                </li>
-                <li>
-                    <a href="#about"
-                        ><i class="fa-solid fa-users-viewfinder"></i>About</a
-                    >
-                </li>
-            </ul>
+            <section class="nav-links">
+                <a class="nav-link-item" href="#">
+                    <i class="fa-solid fa-caravan"></i>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link-item" href="#">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Projects</span>
+                </a>
+                <a class="nav-link-item" href="#about">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                    <span>About</span>
+                </a>
+                <a class="nav-link-item hide-link" href="https://github.com/Pilag6/the-projects">
+                    <i class="fa-brands fa-github"></i>
+                    
+                </a>
+            </section>
 
             <footer class="footer">
                 <div class="dark-light-mode">
@@ -120,7 +124,7 @@
 
             <div class="filter">
                 <buttons class="filter-all filter-active">All</buttons>
-                <buttons class="filter-beginner ">Beginner</buttons>
+                <buttons class="filter-beginner">Beginner</buttons>
                 <buttons class="filter-intermediate">Intermediate</buttons>
                 <buttons class="filter-advanced">Advanced</buttons>
             </div>
