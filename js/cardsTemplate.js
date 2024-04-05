@@ -9,7 +9,7 @@ export function addCardsTemplate() {
         cardTemplate.className = "cardArticle";
 
         cardTemplate.innerHTML = `
-            <p class="card-number">0${card.id + 1}</p>
+            <p class="card-number">${card.id < 9 ? 0 : ""}${card.id + 1}</p>
             <div class="card-image">
                 <img src="${card.image}" alt="${card.name}" draggable="false" />
             </div>
@@ -18,7 +18,9 @@ export function addCardsTemplate() {
                 <h3>${card.name}</h3>
                 <p class="card-description">${card.description}</p>
             </div>
-            <a href="${card.url}" target="_blank" class="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
+            <a href="${
+                card.url
+            }" target="_blank" class="goToProject-btn">Go to project <i class="fa-brands fa-space-awesome"></i
             ></a>
     `;
 

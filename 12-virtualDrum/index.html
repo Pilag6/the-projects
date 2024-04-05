@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Virtual Drum</title>
+        <link rel="shortcut icon" href="./drum-kit.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+        />
+
+        <!----------- Font Awesome ---------->
+        <script
+            src="https://kit.fontawesome.com/4ce5221f73.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <a class="go-home" href="../index.html"><i class="fa-solid fa-arrow-turn-up"></i> Go Home!</a>
+        <div class="container">
+            <section class="box">
+                <article data-key="65" class="key">
+                    <kbd>A</kbd>
+                    <span class="sound">sticks</span>
+                </article>
+                <article data-key="83" class="key">
+                    <kbd>S</kbd>
+                    <span class="sound">hihat</span>
+                </article>
+                <article data-key="68" class="key">
+                    <kbd>D</kbd>
+                    <span class="sound">cymbal</span>
+                </article>
+                <article data-key="70" class="key">
+                    <kbd>F</kbd>
+                    <span class="sound">kick</span>
+                </article>
+                <article data-key="71" class="key">
+                    <kbd>G</kbd>
+                    <span class="sound">bass</span>
+                </article>
+                <article data-key="72" class="key">
+                    <kbd>H</kbd>
+                    <span class="sound">ride</span>
+                </article>
+                <article data-key="74" class="key">
+                    <kbd>J</kbd>
+                    <span class="sound">snare</span>
+                </article>
+                <article data-key="75" class="key">
+                    <kbd>K</kbd>
+                    <span class="sound">tom</span>
+                </article>
+                <article data-key="76" class="key">
+                    <kbd>L</kbd>
+                    <span class="sound">openhat</span>
+                </article>
+                <article data-key="90" class="key">
+                    <kbd>Z</kbd>
+                    <span class="sound">clap</span>
+                </article>
+                <article data-key="88" class="key">
+                    <kbd>X</kbd>
+                    <span class="sound">bongo</span>
+                </article>
+                <article data-key="67" class="key">
+                    <kbd>C</kbd>
+                    <span class="sound">conga</span>
+                </article>
+                <article data-key="86" class="key">
+                    <kbd>V</kbd>
+                    <span class="sound">congtom</span>
+                </article>
+                <article data-key="66" class="key">
+                    <kbd>B</kbd>
+                    <span class="sound">cowbell</span>
+                </article>
+                <article data-key="78" class="key">
+                    <kbd>N</kbd>
+                    <span class="sound">shaker</span>
+                </article>
+                <article data-key="77" class="key">
+                    <kbd>M</kbd>
+                    <span class="sound">Tambour</span>
+                </article>
+            </section>
+
+            <audio data-key="65" src="audios/sticks.mp3"></audio>
+            <audio data-key="83" src="audios/hihat.mp3"></audio>
+            <audio data-key="68" src="audios/cymbal.mp3"></audio>
+            <audio data-key="70" src="audios/kick.mp3"></audio>
+            <audio data-key="71" src="audios/bass.mp3"></audio>
+            <audio data-key="72" src="audios/ride.wav"></audio>
+            <audio data-key="74" src="audios/snare.mp3"></audio>
+            <audio data-key="75" src="audios/tom.wav"></audio>
+            <audio data-key="76" src="audios/openhat.mp3"></audio>
+            <audio data-key="90" src="audios/clap.mp3"></audio>
+            <audio data-key="88" src="audios/bongo.mp3"></audio>
+            <audio data-key="67" src="audios/conga.wav"></audio>
+            <audio data-key="86" src="audios/conga-tom.wav"></audio>
+            <audio data-key="66" src="audios/cowbell.wav"></audio>
+            <audio data-key="78" src="audios/shaker.wav"></audio>
+            <audio data-key="77" src="audios/tambour.wav"></audio>
+        </div>
+    </body>
+
+    <script type="module" src="./main.js"></script>
+</html>

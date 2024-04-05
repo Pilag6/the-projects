@@ -31,6 +31,14 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .go-home {
+        top: 0px;
+        left: 0px;
+        border-radius: 0;
+    }
+}
+
 :root {
     --blue: #051837;
     --green: #01b7ab;
