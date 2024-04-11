@@ -96,5 +96,13 @@ export const cardsInfo = [
         image: "https://bit.ly/43NCueY",
         url: "./12-virtualDrum/index.html",
         category: "advanced",
+    },
+    {
+        id: 12,
+        name: "Dark Mode",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. `,
+        image: "https://bit.ly/4aQPT8I",
+        url: "./13-darkMode/index.html",
+        category: "beginner",
     }
 ];
