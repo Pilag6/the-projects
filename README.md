@@ -92,6 +92,7 @@ We also learn how to use the `split()` method to split a string into an array of
 In this project we learn how to use the <code>parseInt</code> and <code>parseFloat</code> methods to convert strings to numbers and how to use the <code>toFixed</code> method to round numbers to a specific number of decimal places.
 
 ## 10 - StopWatch | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/10-stopwatch)
+![stopwatch](https://github.com/Pilag6/the-projects/assets/79191808/79b0595b-f700-4eed-92c6-121737e3dd76)
 
 This **JavaScript** code creates a countdown timer with start, stop, and reset buttons using **Vanilla JavaScript**.
 
