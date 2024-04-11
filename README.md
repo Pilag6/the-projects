@@ -55,8 +55,12 @@ In this project we explore the `linear-gradient()` method to create a gradient b
 
 We also learned how to create a function to generate random hex colors and how to use the `Math.random()` method.
 
-## 5 - To-Do App *(with localStorage)* | Comming soon!
+## 5 - To-Do App *(with localStorage)* | [:rocket: Go to Code](https://the-projects-js.netlify.app/05-todoapp/)
 ![todogithub](https://github.com/Pilag6/the-projects/assets/79191808/68497608-0c58-41d3-b6f7-296d879e133a)
+
+*To-Do App* developed using **Vanilla JavaScript**. In this project we learn how to use the `localStorage` method to store and retrieve data from the browser.
+
+We also learn how to use `matches`, `closest` and `contains` methods to respond to events.
 
 ## 6 - Countdown Timer | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/06-countdownTimer)
 ![countdown](https://github.com/Pilag6/the-projects/assets/79191808/2b97d599-b073-4de5-971b-7b15ff17d7ee)
@@ -89,12 +93,20 @@ In this project we learn how to use the <code>parseInt</code> and <code>parseFlo
 
 ## 10 - StopWatch | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/10-stopwatch)
 
+This **JavaScript** code creates a countdown timer with start, stop, and reset buttons using **Vanilla JavaScript**.
+
+The `updateTimer()` function updates the display every second via `setInterval()`. User interactions trigger `start()`, `stop()`, and `reset()` functions to control the timer.
+
 ## 11 - Weather API | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/11-weatherApi)
 ![weatherAPP-API](https://github.com/Pilag6/the-projects/assets/79191808/027ba033-9bd1-4814-a0b1-380a1e4640c0)
 
 In this project we explore the `fetch()` method to get data from an external API and how to use the `async` and `await` keywords to handle the promise returned by the `fetch()` method.
 
 We also learn how to use the `try...catch` statement to handle errors and how to use the `then()` method to handle the promise returned by the `fetch()` method.
+
+## 12 - Virtual Drum | [:rocket: Go to Code](https://pilag6.github.io/the-projects/12-virtualDrum/index.html)
+
+Developed using **Vanilla JavaScript**. In this project we learn how to use the `audio` tag and `kbd` to play sounds and how to use the `keydown` event to respond to keyboard events. We also learn how to use the `play()` methods to play sounds.
 
 ---
 
