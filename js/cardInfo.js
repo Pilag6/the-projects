@@ -77,7 +77,7 @@ export const cardsInfo = [
         name: "Stopwatch",
         description: `This <strong>JavaScript</strong> code creates a countdown timer with start, stop, and reset buttons using vanilla JavaScript. The <code>updateTimer() </code>function updates the display every second via <code>setInterval()</code>. User interactions trigger <code>start()</code>, <code>stop()</code>, and <code>reset()</code> functions to control the timer.
         `,
-        image: "https://bit.ly/3w2Sj52",
+        image: "./assets/stopwatch.webp",
         url: "./10-stopwatch/index.html",
         category: "beginner",
     },
