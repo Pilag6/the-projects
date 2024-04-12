@@ -106,6 +106,7 @@ In this project we explore the `fetch()` method to get data from an external API
 We also learn how to use the `try...catch` statement to handle errors and how to use the `then()` method to handle the promise returned by the `fetch()` method.
 
 ## 12 - Virtual Drum | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/12-virtualDrum)
+![virtualDrum](https://github.com/Pilag6/the-projects/assets/79191808/d6c66e08-239a-49bb-9239-b09ac454cc89)
 
 Developed using **Vanilla JavaScript**. In this project we learn how to use the `audio` tag and `kbd` to play sounds and how to use the `keydown` event to respond to keyboard events. We also learn how to use the `play()` methods to play sounds.
 
