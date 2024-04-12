@@ -109,6 +109,10 @@ We also learn how to use the `try...catch` statement to handle errors and how to
 
 Developed using **Vanilla JavaScript**. In this project we learn how to use the `audio` tag and `kbd` to play sounds and how to use the `keydown` event to respond to keyboard events. We also learn how to use the `play()` methods to play sounds.
 
+## 13 - Dark Mode | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/13-darkMode)
+
+Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>classList</code> property to add and remove classes from the <strong>DOM</strong>. We also learn how to use the <code>contains</code> method to check if a class is present in an element.
+
 ---
 
 # Collaborators
