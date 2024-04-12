@@ -100,8 +100,8 @@ export const cardsInfo = [
     {
         id: 12,
         name: "Dark Mode",
-        description: `Developed using <strong>Vanilla JavaScript</strong>. `,
-        image: "https://bit.ly/4aQPT8I",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>classList</code> property to add and remove classes from the <strong>DOM</strong>. We also learn how to use the <code>contains</code> method to check if a class is present in an element.`,
+        image: "./assets/darkMode.webp",
         url: "./13-darkMode/index.html",
         category: "beginner",
     }
