@@ -1,19 +1,19 @@
 :root {
     --clr-bg: #fff;
-    --clr-font: #000;
+    --clr-font: #222222;
 
-    --clr-one: #aeff00;
-    --clr-two: #5ed6ad;
-    --clr-three: #1234ad;
+    --clr-one: #263238;
+    --clr-two: #cfd8dc;
+    --clr-three: #325567;
 }
 
 .dark-mode {
-    --clr-bg: #000;
+    --clr-bg: #222222;
     --clr-font: #fff;
 
-    --clr-one: #cec9a4;
-    --clr-two: #d65ecc;
-    --clr-three: #ff0000;
+    --clr-one: #e9f3f4;
+    --clr-two: #325567;
+    --clr-three: #e0e0e0;
 }
 
 * {
@@ -29,6 +29,11 @@ body {
     width: 1200px;
     margin-inline: auto;
     border: 1px solid var(--clr-font);
+}
+
+
+.btn-toggle.hidden {
+    display: none;
 }
 
 header {
@@ -62,15 +67,40 @@ main {
 
     .articles {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
+        
 
         .posts {
             border: 1px solid var(--clr-font);
-            padding: 0.5rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
 
             h2 {
                 color: var(--clr-three);
+                height: 100px;
+            }
+
+            p {
+                color: var(--clr-three);
+                margin-bottom: 1rem;
+            }
+
+            button {
+                padding: 0.5rem 1rem ;
+                background-color: var(--clr-three);
+                color: var(--clr-two);
+                border: 1px solid var(--clr-one);
+                cursor: pointer;
+                font-weight: 800;
+                margin-top: auto;
+                width: fit-content;
+
+                &:hover {
+                    background-color: var(--clr-one);
+                    color: var(--clr-two);
+                }
             }
         }
  
