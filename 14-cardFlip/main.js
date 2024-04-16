@@ -3,8 +3,6 @@ import { questions } from "./questions.js";
 import { adjectives } from "./adjectives.js";
 import { verbs } from "./verbs.js";
 
-console.log(sentences[0]);
-
 // Variables
 
 const cards = document.querySelector(".cards");
@@ -14,11 +12,8 @@ const flipBtn = document.querySelector(".flipBtn");
 const randomBtn = document.querySelector(".randomBtn");
 const filterBtns = document.querySelectorAll(".filters button");
 
-
-
 let currentIndex = 0;
 let dataArray = sentences;
-
 
 function createCard(data) {
     const card = document.createElement("div");
@@ -43,19 +38,18 @@ createCard(sentences[currentIndex]);
 function nextCard() {
     currentIndex++;
     if (currentIndex > dataArray.length - 1) {
-      currentIndex = 0;
+        currentIndex = 0;
     }
     createCard(dataArray[currentIndex]);
-  }
-  
-  function prevCard() {
+}
+
+function prevCard() {
     currentIndex--;
     if (currentIndex < 0) {
-      currentIndex = dataArray.length - 1;
+        currentIndex = dataArray.length - 1;
     }
     createCard(dataArray[currentIndex]);
-  }
-  
+}
 
 function flipCard() {
     const card = document.querySelector(".card");
@@ -63,20 +57,27 @@ function flipCard() {
 }
 
 function randomCard() {
-    currentIndex = Math.floor(Math.random() * dataArray.length)
+    currentIndex = Math.floor(Math.random() * dataArray.length);
     createCard(dataArray[currentIndex]);
 }
 
 // Event Listeners
 nextBtn.addEventListener("click", nextCard);
 prevBtn.addEventListener("click", prevCard);
-flipBtn.addEventListener("click", flipCard)
-randomBtn.addEventListener("click", randomCard)
+flipBtn.addEventListener("click", flipCard);
+randomBtn.addEventListener("click", randomCard);
 
 filterBtns.forEach((button) => {
     button.addEventListener("click", () => {
         const category = button.dataset.category;
         console.log(category);
+        // Remove "active" class from all buttons
+        filterBtns.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        // Add "active" class to the clicked button
+        button.classList.add("active");
         switch (category) {
             case "sentences":
                 dataArray = sentences;

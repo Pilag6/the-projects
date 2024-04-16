@@ -5,7 +5,7 @@
 }
 
 :root {
-    --aside-width: 300px;
+    --aside-width: 170px;
 }
 
 .container {
@@ -16,38 +16,45 @@
 
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     position: relative;
+    overflow: hidden;
 }
 
 aside {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: var(--aside-width);
-    background: linear-gradient(to right, #051837, #01b7ab);
+    background: linear-gradient(to right top, #051837, #01b7ab);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 100vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    padding: 1rem;
 
     .filters {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        margin-top: 2rem;
+        margin: 2rem 0;
 
         button {
             background: none;
             border: none;
             color: #fff;
             background-color: #01b7ab;
-            font-size: 1.2rem;
+            font-size: 1rem;
             padding: 1rem;
             cursor: pointer;
             transition: 0.3s;
+            border-radius: 10px;
+            outline: 2px solid #fff;
 
             &:hover {
                 color: #031c1a;
+                background-color: #fff;
+            }
+            &.active {
+                color: #031c1a;
+                background-color: #fff;
             }
         }
     }
@@ -69,8 +76,9 @@ main {
         justify-content: center;
         align-items: center;
         width: 50%;
-        height: 400px;
+        height: 450px;
         perspective: 1000px;
+        border-radius: 10px;
 
         .card {
             width: 100%;
@@ -83,6 +91,7 @@ main {
             transform-style: preserve-3d;
             /* backface-visibility: hidden; */
             transition: transform 0.6s;
+            border-radius: 10px;
 
             .front,
             .back {
@@ -95,20 +104,25 @@ main {
                 align-items: center;
                 color: #fff;
                 font-size: 3rem;
+                text-align: center;
+                border-radius: 10px;
+                border: 4px solid #fff;
+                padding-inline: 2rem;
             }
 
             .id {
                 position: absolute;
                 top: 4%;
                 left: 4%;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
                 width: 50px;
                 height: 50px;
                 background-color: #01b7ab;
                 border-radius: 50%;
                 display: flex;
-                justify-content: center;align-items: center;
+                justify-content: center;
+                align-items: center;
                 border: 2px solid #fff;
             }
 
@@ -123,12 +137,12 @@ main {
 
                 .id {
                     background: linear-gradient(
-                    to bottom,
-                    black 33.3%,
-                    red 33.3%,
-                    red 66.6%,
-                    gold 66.6%
-                );
+                        to bottom,
+                        black 33.3%,
+                        red 33.3%,
+                        red 66.6%,
+                        gold 66.6%
+                    );
                 }
             }
 
@@ -184,52 +198,52 @@ main {
 
                 .id {
                     background: linear-gradient(
-                        transparent 40%,
-                        #c8102e 40% 60%,
-                        transparent 60%
-                    ),
-                    linear-gradient(
-                        to right,
-                        transparent 45%,
-                        #c8102e 45% 55%,
-                        transparent 55%
-                    ),
-                    linear-gradient(
-                        transparent 35%,
-                        #fff 35% 65%,
-                        transparent 65%
-                    ),
-                    linear-gradient(
-                        to right,
-                        transparent 42.25%,
-                        #fff 42.25% 57.75%,
-                        transparent 42.25%
-                    ),
-                    linear-gradient(
-                        25deg,
-                        transparent 47.5%,
-                        #c8102e 47.5% 52.5%,
-                        transparent 52.5%
-                    ),
-                    linear-gradient(
-                        -25deg,
-                        transparent 47.5%,
-                        #c8102e 47.5% 52.5%,
-                        transparent 52.5%
-                    ),
-                    linear-gradient(
-                        25deg,
-                        transparent 45%,
-                        #fff 45% 55%,
-                        transparent 55%
-                    ),
-                    linear-gradient(
-                        -25deg,
-                        transparent 45%,
-                        #fff 45% 55%,
-                        transparent 55%
-                    );
-                background-color: #012169;
+                            transparent 40%,
+                            #c8102e 40% 60%,
+                            transparent 60%
+                        ),
+                        linear-gradient(
+                            to right,
+                            transparent 45%,
+                            #c8102e 45% 55%,
+                            transparent 55%
+                        ),
+                        linear-gradient(
+                            transparent 35%,
+                            #fff 35% 65%,
+                            transparent 65%
+                        ),
+                        linear-gradient(
+                            to right,
+                            transparent 42.25%,
+                            #fff 42.25% 57.75%,
+                            transparent 42.25%
+                        ),
+                        linear-gradient(
+                            25deg,
+                            transparent 47.5%,
+                            #c8102e 47.5% 52.5%,
+                            transparent 52.5%
+                        ),
+                        linear-gradient(
+                            -25deg,
+                            transparent 47.5%,
+                            #c8102e 47.5% 52.5%,
+                            transparent 52.5%
+                        ),
+                        linear-gradient(
+                            25deg,
+                            transparent 45%,
+                            #fff 45% 55%,
+                            transparent 55%
+                        ),
+                        linear-gradient(
+                            -25deg,
+                            transparent 45%,
+                            #fff 45% 55%,
+                            transparent 55%
+                        );
+                    background-color: #012169;
                 }
             }
         }
@@ -259,3 +273,5 @@ main {
 .flipped {
     transform: rotateY(180deg);
 }
+
+
