@@ -111,5 +111,6 @@ export const cardsInfo = [
         description: `Developed using <strong>Vanilla JavaScript</strong>.`,
         image: "./assets/flipCard.webp",
         url: "./14-cardFlip/index.html",
+        category: "intermediate",
     }
 ];
