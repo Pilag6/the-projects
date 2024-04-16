@@ -104,5 +104,12 @@ export const cardsInfo = [
         image: "./assets/darkMode.webp",
         url: "./13-darkMode/index.html",
         category: "beginner",
+    },
+    {
+        id: 13,
+        name: "Flip Card Languages",
+        description: `Developed using <strong>Vanilla JavaScript</strong>.`,
+        image: "./assets/flipCard.webp",
+        url: "./14-cardFlip/index.html",
     }
 ];
