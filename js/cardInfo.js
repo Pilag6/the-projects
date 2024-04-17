@@ -108,8 +108,8 @@ export const cardsInfo = [
     {
         id: 13,
         name: "Flip Card Languages",
-        description: `Developed using <strong>Vanilla JavaScript</strong>.`,
-        image: "./assets/flipCard.webp",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>dataset</code> property to store data in the <strong>DOM</strong>. We also learn how to use the <code>forEach</code> method to loop through an array. And we have an introduction to the <code>switch</code> statement.`,
+        image: "./assets/cardFlip.webp",
         url: "./14-cardFlip/index.html",
         category: "intermediate",
     }
