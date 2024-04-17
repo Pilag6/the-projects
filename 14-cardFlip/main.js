@@ -30,6 +30,7 @@ function createCard(data) {
       <div class="front">
         <p>${data.german}</p>
         <h3 class="id">${data.id}</h3>
+        <i class="fa-solid fa-volume-high"></i>
       </div>
       <div class="back">
         <p>${data.english}</p>
@@ -39,6 +40,18 @@ function createCard(data) {
     cards.innerHTML = card.outerHTML;
     // cards.innerHTML = ""
     // cards.appendChild(card)
+
+       // Attach event listener for the volume icon of the new card
+       const volumeIcon = document.querySelector(".fa-volume-high");
+       volumeIcon.addEventListener("click", () => {
+           const outputText = document.querySelector(".front p").textContent;
+           const speech = new SpeechSynthesisUtterance(outputText);
+           speech.lang = "de-DE";
+           speech.volume = 1;
+           speech.rate = 1;
+           speech.pitch = 1;
+           window.speechSynthesis.speak(speech);
+       });
 }
 
 createCard(sentences[currentIndex]);
@@ -150,3 +163,8 @@ filterBtns.forEach((button) => {
         }
     });
 });
+
+
+
+
+
