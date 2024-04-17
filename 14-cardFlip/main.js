@@ -41,17 +41,17 @@ function createCard(data) {
     // cards.innerHTML = ""
     // cards.appendChild(card)
 
-       // Attach event listener for the volume icon of the new card
-       const volumeIcon = document.querySelector(".fa-volume-high");
-       volumeIcon.addEventListener("click", () => {
-           const outputText = document.querySelector(".front p").textContent;
-           const speech = new SpeechSynthesisUtterance(outputText);
-           speech.lang = "de-DE";
-           speech.volume = 1;
-           speech.rate = 1;
-           speech.pitch = 1;
-           window.speechSynthesis.speak(speech);
-       });
+    // Attach event listener for the volume icon of the new card
+    const volumeIcon = document.querySelector(".fa-volume-high");
+    volumeIcon.addEventListener("click", () => {
+        const outputText = document.querySelector(".front p").textContent;
+        const speech = new SpeechSynthesisUtterance(outputText);
+        speech.lang = "de-DE";
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+    });
 }
 
 createCard(sentences[currentIndex]);
@@ -163,8 +163,3 @@ filterBtns.forEach((button) => {
         }
     });
 });
-
-
-
-
-
