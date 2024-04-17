@@ -36,18 +36,30 @@ function createCard(data) {
       <div class="back">
         <p>${data.english}</p>
         <h3 class="id">${data.id}</h3>
+        <i class="fa-solid fa-volume-high"></i>
       </div>
     `;
   cards.innerHTML = card.outerHTML;
   // cards.innerHTML = ""
   // cards.appendChild(card)
 
-  // Attach event listener for the volume icon of the new card
-  const volumeIcon = document.querySelector(".fa-volume-high");
-  volumeIcon.addEventListener("click", () => {
+  // Attach event listener for the volume icon of german text
+  const volumeIconDE = document.querySelector(".front .fa-volume-high");
+  volumeIconDE.addEventListener("click", () => {
     const outputText = document.querySelector(".front p").textContent;
     const speech = new SpeechSynthesisUtterance(outputText);
     speech.lang = "de-DE";
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;
+    window.speechSynthesis.speak(speech);
+  });
+  // Attach event listener for the volume icon of english text
+  const volumeIconEN = document.querySelector(".back .fa-volume-high");
+  volumeIconEN.addEventListener("click", () => {
+    const outputText = document.querySelector(".back p").textContent;
+    const speech = new SpeechSynthesisUtterance(outputText);
+    speech.lang = "en-US";
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
