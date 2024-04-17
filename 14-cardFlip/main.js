@@ -1,11 +1,15 @@
-import { sentences } from "./sentences.js";
-import { questions } from "./questions.js";
-import { adjectives } from "./adjectives.js";
-import { verbs } from "./verbs.js";
-import { nouns } from "./nouns.js";
-import { colors } from "./colors.js";
-import { animals } from "./animals.js";
-import { adverbs } from "./adverbs.js";
+import { sentences } from "./data/sentences.js";
+import { questions } from "./data/questions.js";
+import { adjectives } from "./data/adjectives.js";
+import { verbs } from "./data/verbs.js";
+import { nouns } from "./data/nouns.js";
+import { colors } from "./data/colors.js";
+import { animals } from "./data/animals.js";
+import { adverbs } from "./data/adverbs.js";
+import { family } from "./data/family.js";
+import { prepositions } from "./data/prepositions.js";
+import { food } from "./data/food.js";
+import { conjunctions } from "./data/conjunctions.js";
 
 // Variables
 
@@ -122,6 +126,26 @@ filterBtns.forEach((button) => {
                 dataArray = adverbs;
                 currentIndex = 0;
                 createCard(adverbs[currentIndex]);
+                break;
+            case "family":
+                dataArray = family;
+                currentIndex = 0;
+                createCard(family[currentIndex]);
+                break;
+            case "prepositions":
+                dataArray = prepositions;
+                currentIndex = 0;
+                createCard(prepositions[currentIndex]);
+                break;
+            case "food":
+                dataArray = food;
+                currentIndex = 0;
+                createCard(food[currentIndex]);
+                break;
+            case "conjunctions":
+                dataArray = conjunctions;
+                currentIndex = 0;
+                createCard(conjunctions[currentIndex]);
                 break;
         }
     });
