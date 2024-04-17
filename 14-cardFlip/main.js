@@ -2,6 +2,10 @@ import { sentences } from "./sentences.js";
 import { questions } from "./questions.js";
 import { adjectives } from "./adjectives.js";
 import { verbs } from "./verbs.js";
+import { nouns } from "./nouns.js";
+import { colors } from "./colors.js";
+import { animals } from "./animals.js";
+import { adverbs } from "./adverbs.js";
 
 // Variables
 
@@ -98,6 +102,26 @@ filterBtns.forEach((button) => {
                 dataArray = verbs;
                 currentIndex = 0;
                 createCard(verbs[currentIndex]);
+                break;
+            case "nouns":
+                dataArray = nouns;
+                currentIndex = 0;
+                createCard(nouns[currentIndex]);
+                break;
+            case "colors":
+                dataArray = colors;
+                currentIndex = 0;
+                createCard(colors[currentIndex]);
+                break;
+            case "animals":
+                dataArray = animals;
+                currentIndex = 0;
+                createCard(animals[currentIndex]);
+                break;
+            case "adverbs":
+                dataArray = adverbs;
+                currentIndex = 0;
+                createCard(adverbs[currentIndex]);
                 break;
         }
     });
