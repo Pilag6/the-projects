@@ -114,6 +114,11 @@ Developed using **Vanilla JavaScript**. In this project we learn how to use the 
 
 Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>classList</code> property to add and remove classes from the <strong>DOM</strong>. We also learn how to use the <code>contains</code> method to check if a class is present in an element.
 
+## 14 - Flip Card Languages | [:rocket: Go to Code](https://github.com/Pilag6/the-projects/tree/main/14-cardFlip)
+![cardFlip](https://github.com/Pilag6/the-projects/assets/79191808/7785473d-6f49-4f45-bbd5-cdc845566ba4)
+
+In this project we learn how to use the <code>dataset</code> property to store data in the <strong>DOM</strong>. We also learn how to use the <code>forEach</code> method to loop through an array. And we have an introduction to the <code>switch</code> statement
+
 ---
 
 # Collaborators
