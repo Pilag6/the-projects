@@ -25,9 +25,9 @@ let dataArray = sentences;
 
 // Functions
 function createCard(data) {
-  const card = document.createElement("div");
-  card.classList.add("card");
-  card.innerHTML = `
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.innerHTML = `
       <div class="front">
         <p>${data.german}</p>
         <h3 class="id">${data.id}</h3>
@@ -39,58 +39,53 @@ function createCard(data) {
         <i class="fa-solid fa-volume-high"></i>
       </div>
     `;
-  cards.innerHTML = card.outerHTML;
-  // cards.innerHTML = ""
-  // cards.appendChild(card)
+    cards.innerHTML = card.outerHTML;
+    // cards.innerHTML = ""
+    // cards.appendChild(card)
 
-  // Attach event listener for the volume icon of german text
-  const volumeIconDE = document.querySelector(".front .fa-volume-high");
-  volumeIconDE.addEventListener("click", () => {
-    const outputText = document.querySelector(".front p").textContent;
-    const speech = new SpeechSynthesisUtterance(outputText);
-    speech.lang = "de-DE";
-    speech.volume = 1;
-    speech.rate = 1;
-    speech.pitch = 1;
-    window.speechSynthesis.speak(speech);
-  });
-  // Attach event listener for the volume icon of english text
-  const volumeIconEN = document.querySelector(".back .fa-volume-high");
-  volumeIconEN.addEventListener("click", () => {
-    const outputText = document.querySelector(".back p").textContent;
-    const speech = new SpeechSynthesisUtterance(outputText);
-    speech.lang = "en-US";
-    speech.volume = 1;
-    speech.rate = 1;
-    speech.pitch = 1;
-    window.speechSynthesis.speak(speech);
-  });
+    function attachVolumeIconEventListener(lang, selector) {
+        const volumeIcon = document.querySelector(selector);
+        volumeIcon.addEventListener("click", () => {
+            const outputText = document.querySelector(
+                selector.replace(".fa-volume-high", "p")
+            ).textContent;
+            const speech = new SpeechSynthesisUtterance(outputText);
+            speech.lang = lang;
+            speech.volume = 1;
+            speech.rate = 1;
+            speech.pitch = 1;
+            window.speechSynthesis.speak(speech);
+        });
+    }
+
+    attachVolumeIconEventListener("de-DE", ".front .fa-volume-high");
+    attachVolumeIconEventListener("en-US", ".back .fa-volume-high");
 }
 
 function nextCard() {
-  currentIndex++;
-  if (currentIndex > dataArray.length - 1) {
-    currentIndex = 0;
-  }
-  createCard(dataArray[currentIndex]);
+    currentIndex++;
+    if (currentIndex > dataArray.length - 1) {
+        currentIndex = 0;
+    }
+    createCard(dataArray[currentIndex]);
 }
 
 function prevCard() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = dataArray.length - 1;
-  }
-  createCard(dataArray[currentIndex]);
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = dataArray.length - 1;
+    }
+    createCard(dataArray[currentIndex]);
 }
 
 function flipCard() {
-  const card = document.querySelector(".card");
-  card.classList.toggle("flipped");
+    const card = document.querySelector(".card");
+    card.classList.toggle("flipped");
 }
 
 function randomCard() {
-  currentIndex = Math.floor(Math.random() * dataArray.length);
-  createCard(dataArray[currentIndex]);
+    currentIndex = Math.floor(Math.random() * dataArray.length);
+    createCard(dataArray[currentIndex]);
 }
 
 // INITIAL LOAD
@@ -103,56 +98,27 @@ flipBtn.addEventListener("click", flipCard);
 randomBtn.addEventListener("click", randomCard);
 
 filterBtns.forEach((button) => {
-  button.addEventListener("click", () => {
-    const category = button.dataset.category;
-    console.log(category);
-    // Remove "active" class from all buttons
-    filterBtns.forEach((btn) => {
-      btn.classList.remove("active");
+    button.addEventListener("click", () => {
+        const category = button.dataset.category;
+        console.log(category);
+        filterBtns.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        const dataMap = {
+            sentences,
+            questions,
+            adjectives,
+            verbs,
+            nouns,
+            colors,
+            animals,
+            adverbs,
+            family,
+            prepositions,
+            food,
+            conjunctions
+        };
+        dataArray = dataMap[category];
+        currentIndex = 0;
+        createCard(dataArray[currentIndex]);
     });
-
-    // Add "active" class to the clicked button
-    button.classList.add("active");
-    switch (category) {
-      case "sentences":
-        dataArray = sentences;
-        break;
-      case "questions":
-        dataArray = questions;
-        break;
-      case "adjectives":
-        dataArray = adjectives;
-        break;
-      case "verbs":
-        dataArray = verbs;
-        break;
-      case "nouns":
-        dataArray = nouns;
-        break;
-      case "colors":
-        dataArray = colors;
-        break;
-      case "animals":
-        dataArray = animals;
-        break;
-      case "adverbs":
-        dataArray = adverbs;
-        break;
-      case "family":
-        dataArray = family;
-        break;
-      case "prepositions":
-        dataArray = prepositions;
-        break;
-      case "food":
-        dataArray = food;
-        break;
-      case "conjunctions":
-        dataArray = conjunctions;
-        break;
-    }
-    // Reset currentIndex to 0 and create a new card with the new data
-    currentIndex = 0;
-    createCard(dataArray[currentIndex]);
-  });
 });
