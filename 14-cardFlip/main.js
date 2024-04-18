@@ -28,16 +28,16 @@ function createCard(data) {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-      <div class="front">
-        <p>${data.german}</p>
-        <h3 class="id">${data.id}</h3>
-        <i class="fa-solid fa-volume-high"></i>
-      </div>
-      <div class="back">
-        <p>${data.english}</p>
-        <h3 class="id">${data.id}</h3>
-        <i class="fa-solid fa-volume-high"></i>
-      </div>
+        <div class="front">
+            <p>${data.german}</p>
+            <h3 class="id">${data.id}</h3>
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <div class="back">
+            <p>${data.english}</p>
+            <h3 class="id">${data.id}</h3>
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
     `;
     cards.innerHTML = card.outerHTML;
     // cards.innerHTML = ""
@@ -100,22 +100,22 @@ randomBtn.addEventListener("click", randomCard);
 filterBtns.forEach((button) => {
     button.addEventListener("click", () => {
         const category = button.dataset.category;
-        console.log(category);
+        // console.log(category);
         filterBtns.forEach((btn) => btn.classList.remove("active"));
         button.classList.add("active");
         const dataMap = {
-            sentences,
-            questions,
             adjectives,
-            verbs,
-            nouns,
-            colors,
-            animals,
             adverbs,
+            animals,
+            colors,
+            conjunctions,
             family,
-            prepositions,
             food,
-            conjunctions
+            nouns,
+            prepositions,
+            questions,
+            sentences,
+            verbs,
         };
         dataArray = dataMap[category];
         currentIndex = 0;
