@@ -112,5 +112,13 @@ export const cardsInfo = [
         image: "./assets/cardFlip.webp",
         url: "./14-cardFlip/index.html",
         category: "intermediate",
+    },
+    {
+        id: 14,
+        name: "Rock Paper Scissors",
+        description: `Developed using <strong>Vanilla JavaScript</strong>. In this project we learn how to use the <code>Math.random()</code> method to generate random numbers and how to use the <code>if</code> statement to make decisions based on the result of the game.`,
+        image: "../15-rockPaperScissors/scissors.png",
+        url: "./15-rockPaperScissors/index.html",
+        category: "beginner",
     }
 ];
