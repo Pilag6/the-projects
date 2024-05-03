@@ -61,6 +61,7 @@ scissors.addEventListener("click", () => {
     playerChoice.src = "./scissors.png";
     let random = Math.floor(Math.random() * choices.length);
     computerChoice.src = `./${choices[random]}.png`;
+    console.log("RANDOM SCISSORS",random);
 
     if (choices[random] === "scissors") {
         result.textContent = "It's a draw";
@@ -78,3 +79,5 @@ resetBtn.addEventListener("click", () => {
     computerScore.textContent = 0;
     playerScore.textContent = 0;
 });
+
+// This is a new comment
