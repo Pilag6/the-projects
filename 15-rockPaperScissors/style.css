@@ -94,7 +94,13 @@ img {
             color: #fff;
             text-align: center;
             border: 1px solid #fff;
-            padding: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            color: #398763;
+
+            h2 {
+                width: 120px;
+            }
 
             span {
                 display: block;
@@ -104,7 +110,7 @@ img {
 
         .reset {
             button {
-                padding: 0.5rem 1rem;
+                padding: 1rem 1.5rem;
                 color: #398763;
                 background: #fff;
                 border: none;
