@@ -363,7 +363,7 @@ main {
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
         padding: 20px 40px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
 
         article {
             background-color: var(--white);
@@ -466,6 +466,36 @@ main {
                 }
             }
         }
+    }
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        margin-bottom: 50px;
+
+        button {
+            padding: 10px 15px;
+            background-color: var(--blackGrey);
+            color: var(--yellow);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: var(--yellow) 1px solid;
+
+
+            &:hover {
+                background-color: var(--yellow);
+                color: var(--black);
+            }
+        }
+
+        button.active {
+            background-color: var(--yellow);
+            color: var(--black);
+        }
+    
     }
 }
 
