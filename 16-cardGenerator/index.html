@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="form-group">
+                <label for="orientation">Orientation</label>
+                <select id="orientation" name="orientation">
+                    <option value="portrait">Portrait</option>
+                    <option value="square">Square</option>
+                    <option value="landscape">Landscape</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="border">Border Style</label>
+                <select id="border" name="border">
+                    <option value="no-border">No Border</option>
+                    <option value="full-border">Full Border</option>
+                    <option value="left-border">Left Border</option>
+                    <option value="right-border">Right Border</option>
+                    <option value="top-border">Top Border</option>
+                    <option value="bottom-border">Bottom Border</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="borderWidth">Border Width (px)</label>
+                <input type="number" id="borderWidth" name="borderWidth" value="2" min="0" max="10">
+            </div>
+            <div class="form-group">
+                <label for="borderColor">Border Color</label>
+                <input type="color" id="borderColor" name="borderColor" value="#000000">
+            </div>
+            <div class="form-group">
+                <label for="borderRadius">Border Radius: <span id="borderRadiusValue">0</span>px</label>
+                <input type="range" id="borderRadius" name="borderRadius" value="0" min="0" max="50">
+            </div>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" value="Card Title">
+            </div>
+            <div class="form-group">
+                <label for="paragraph">Paragraph (max 250 characters)</label>
+                <textarea id="paragraph" name="paragraph" rows="3" maxlength="250">This is a sample paragraph. Edit it to see changes in real-time.</textarea>
+            </div>
+            <div class="form-group">
+                <label for="textColor">Text Color</label>
+                <input type="color" id="textColor" name="textColor" value="#000000">
+            </div>
+            <div class="form-group">
+                <label for="bgTextColor">Text Background Color</label>
+                <select id="bgTextColor" name="bgTextColor">
+                    <option value="none">None</option>
+                    <option value="#FFFFFF">White</option>
+                    <option value="#000000">Black</option>
+                    <!-- You can add more predefined colors here -->
+                    <option value="#FF0000">Red</option>
+                    <option value="#00FF00">Green</option>
+                    <option value="#0000FF">Blue</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="padding">Padding (px)</label>
+                <input type="number" id="padding" name="padding" value="4" min="0" max="20">
+            </div>
+            <div class="form-group">
+                <label for="bgColor">Card Background Color</label>
+                <input type="color" id="bgColor" name="bgColor" value="#F0F0F0">
+            </div>
+            <div class="form-group">
+                <label for="bgImage">Background Image URL</label>
+                <input type="text" id="bgImage" name="bgImage" placeholder="Enter image URL">
+            </div>
+            <div class="form-group">
+                <label for="imageUpload">Upload Background Image</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="textPosition">Text Position</label>
+                <select id="textPosition" name="textPosition">
+                    <option value="flex-start">Top</option>
+                    <option value="center">Center</option>
+                    <option value="flex-end">Bottom</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="textAlign">Text Align</label>
+                <select id="textAlign" name="textAlign">
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="preview">
+            <div id="card" class="card portrait no-border">
+                <div id="textBlock" class="text-block">
+                    <h2 id="cardTitle" class="card-title">Card Title</h2>
+                    <p id="cardParagraph" class="card-paragraph">This is a sample paragraph. Edit it to see changes in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
