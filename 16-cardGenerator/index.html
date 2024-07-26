@@ -1,108 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Card Generator</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="container">
         <div class="controls">
-            <div class="form-group">
-                <label for="orientation">Orientation</label>
-                <select id="orientation" name="orientation">
-                    <option value="portrait">Portrait</option>
-                    <option value="square">Square</option>
-                    <option value="landscape">Landscape</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="border">Border Style</label>
-                <select id="border" name="border">
-                    <option value="no-border">No Border</option>
-                    <option value="full-border">Full Border</option>
-                    <option value="left-border">Left Border</option>
-                    <option value="right-border">Right Border</option>
-                    <option value="top-border">Top Border</option>
-                    <option value="bottom-border">Bottom Border</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="borderWidth">Border Width (px)</label>
-                <input type="number" id="borderWidth" name="borderWidth" value="2" min="0" max="10">
-            </div>
-            <div class="form-group">
-                <label for="borderColor">Border Color</label>
-                <input type="color" id="borderColor" name="borderColor" value="#000000">
-            </div>
-            <div class="form-group">
-                <label for="borderRadius">Border Radius: <span id="borderRadiusValue">0</span>px</label>
-                <input type="range" id="borderRadius" name="borderRadius" value="0" min="0" max="50">
-            </div>
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title" value="Card Title">
-            </div>
-            <div class="form-group">
-                <label for="paragraph">Paragraph (max 250 characters)</label>
-                <textarea id="paragraph" name="paragraph" rows="3" maxlength="250">This is a sample paragraph. Edit it to see changes in real-time.</textarea>
-            </div>
-            <div class="form-group">
-                <label for="textColor">Text Color</label>
-                <input type="color" id="textColor" name="textColor" value="#000000">
-            </div>
-            <div class="form-group">
-                <label for="bgTextColor">Text Background Color</label>
-                <select id="bgTextColor" name="bgTextColor">
-                    <option value="none">None</option>
-                    <option value="#FFFFFF">White</option>
-                    <option value="#000000">Black</option>
-                    <!-- You can add more predefined colors here -->
-                    <option value="#FF0000">Red</option>
-                    <option value="#00FF00">Green</option>
-                    <option value="#0000FF">Blue</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="padding">Padding (px)</label>
-                <input type="number" id="padding" name="padding" value="4" min="0" max="20">
-            </div>
-            <div class="form-group">
-                <label for="bgColor">Card Background Color</label>
-                <input type="color" id="bgColor" name="bgColor" value="#F0F0F0">
-            </div>
-            <div class="form-group">
-                <label for="bgImage">Background Image URL</label>
-                <input type="text" id="bgImage" name="bgImage" placeholder="Enter image URL">
-            </div>
-            <div class="form-group">
-                <label for="imageUpload">Upload Background Image</label>
-                <input type="file" id="imageUpload" accept="image/*">
-            </div>
-            <div class="form-group">
-                <label for="textPosition">Text Position</label>
-                <select id="textPosition" name="textPosition">
-                    <option value="flex-start">Top</option>
-                    <option value="center">Center</option>
-                    <option value="flex-end">Bottom</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="textAlign">Text Align</label>
-                <select id="textAlign" name="textAlign">
-                    <option value="left">Left</option>
-                    <option value="center">Center</option>
-                    <option value="right">Right</option>
-                </select>
-            </div>
+            <h2 class="main-title">Card Generator</h2>
+            
+            <!-- ORIENTATION -->
+            <section>
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-mobile-alt"></i> Orientation
+                    </label>
+                    <div class="orientation-buttons">
+                        <button id="portrait" class="orientation-button active" title="Portrait">
+                            <i class="fas fa-mobile-alt"></i>
+                        </button>
+                        <button id="square" class="orientation-button" title="Square">
+                            <i class="fa-regular fa-square"></i>
+                        </button>
+                        <button id="landscape" class="orientation-button" title="Landscape">
+                            <i class="fas fa-mobile-alt fa-rotate-90"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BORDER -->
+            <section>
+                <h3>Border</h3>
+                <div class="form-group form-group-row">
+                    <div class="form-group-item">
+                        <label for="border">
+                            <i class="fas fa-border-style"></i> Style
+                        </label>
+                        <select id="border" name="border">
+                            <option value="no-border">No Border</option>
+                            <option value="full-border">Full Border</option>
+                            <option value="left-border">Left Border</option>
+                            <option value="right-border">Right Border</option>
+                            <option value="top-border">Top Border</option>
+                            <option value="bottom-border">Bottom Border</option>
+                        </select>
+                    </div>
+                    <div class="form-group-item">
+                        <label for="borderWidth">
+                            <i class="fas fa-arrows-alt-h"></i> Width
+                        </label>
+                        <div class="input-with-unit">
+                            <button class="minus-button" data-target="borderWidth"><i class="fas fa-minus"></i></button>
+                            <input
+                                type="number"
+                                id="borderWidth"
+                                name="borderWidth"
+                                value="2"
+                                min="0"
+                                max="10"
+                            />
+                            <button class="plus-button" data-target="borderWidth"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-group-item color-input">
+                        <label for="borderColor">
+                            <i class="fas fa-palette"></i> Color
+                        </label>
+                        <div class="color-input-wrapper">
+                            <input
+                                type="color"
+                                id="borderColor"
+                                name="borderColor"
+                                value="#000000"
+                            />
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="borderRadius">
+                        <i class="fa-regular fa-circle"></i> Border Radius:
+                        <span id="borderRadiusValue">0</span>px
+                    </label>
+                    <input
+                        type="range"
+                        id="borderRadius"
+                        name="borderRadius"
+                        value="0"
+                        min="0"
+                        max="50"
+                        step="2"
+                    />
+                </div>
+            </section>
+
+            <!-- TEXT -->
+            <section>
+                <h3>Text</h3>
+                <div class="form-group">
+                    <label for="title">
+                        <i class="fas fa-heading"></i> Title
+                    </label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        value="Card Title"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="paragraph">
+                        <i class="fas fa-paragraph"></i> Paragraph
+                    </label>
+                    <textarea
+                        id="paragraph"
+                        name="paragraph"
+                        rows="3"
+                        maxlength="250"
+                    >
+This is a sample paragraph. Edit it to see changes in real-time.</textarea
+                    >
+                    <span class="char-count"
+                        ><span id="charCount">0</span>/250</span
+                    >
+                </div>
+                <div class="form-group form-group-row">
+                    <div class="form-group-item color-input">
+                        <label for="textColor">
+                            <i class="fas fa-font"></i> Text Color
+                        </label>
+                        <div class="color-input-wrapper">
+                            <input
+                                type="color"
+                                id="textColor"
+                                name="textColor"
+                                value="#000000"
+                            />
+                            <input
+                                type="text"
+                                id="textColorHex"
+                                value="#000000"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group-item">
+                        <label for="bgTextColor">
+                            <i class="fas fa-fill-drip"></i> Text Background
+                        </label>
+                        <select id="bgTextColor" name="bgTextColor">
+                            <option value="none">None</option>
+                            <option value="#FFFFFF">White</option>
+                            <option value="#000000">Black</option>
+                            <option value="#FF0000">Red</option>
+                            <option value="#00FF00">Green</option>
+                            <option value="#0000FF">Blue</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group form-group-row">
+                    <div class="form-group-item">
+                        <label for="textPosition">
+                            <i class="fas fa-arrows-alt-v"></i> Position
+                        </label>
+                        <select id="textPosition" name="textPosition">
+                            <option value="flex-start">Top</option>
+                            <option value="center">Center</option>
+                            <option value="flex-end">Bottom</option>
+                        </select>
+                    </div>
+                    <div class="form-group-item">
+                        <label for="textAlign">
+                            <i class="fas fa-align-left"></i> Align
+                        </label>
+                        <select id="textAlign" name="textAlign">
+                            <option value="left">Left</option>
+                            <option value="center">Center</option>
+                            <option value="right">Right</option>
+                        </select>
+                    </div>
+                    <div class="form-group-item">
+                        <label for="padding">
+                            <i class="fas fa-expand"></i> Padding
+                        </label>
+                        <div class="input-with-unit">
+                            <button class="minus-button" data-target="padding"><i class="fas fa-minus"></i></button>
+                            <input
+                                type="number"
+                                id="padding"
+                                name="padding"
+                                value="4"
+                                min="0"
+                                max="20"
+                            />
+                            <button class="plus-button" data-target="padding"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BACKGROUND -->
+            <section>
+                <h3>Background</h3>
+                <div class="form-group color-input">
+                    <label for="bgColor">
+                        <i class="fas fa-fill"></i> Card Background
+                    </label>
+                    <div class="color-input-wrapper">
+                        <input
+                            type="color"
+                            id="bgColor"
+                            name="bgColor"
+                            value="#F0F0F0"
+                        />
+                        <input type="text" id="bgColorHex" value="#F0F0F0" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bgImage">
+                        <i class="fas fa-image"></i> Background Image URL
+                    </label>
+                    <input
+                        type="text"
+                        id="bgImage"
+                        name="bgImage"
+                        placeholder="Enter image URL"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="imageUpload">
+                        <i class="fas fa-upload"></i> Upload Background
+                    </label>
+                    <input type="file" id="imageUpload" accept="image/*" />
+                </div>
+            </section>
         </div>
 
         <div class="preview">
             <div id="card" class="card portrait no-border">
                 <div id="textBlock" class="text-block">
                     <h2 id="cardTitle" class="card-title">Card Title</h2>
-                    <p id="cardParagraph" class="card-paragraph">This is a sample paragraph. Edit it to see changes in real-time.</p>
+                    <p id="cardParagraph" class="card-paragraph">
+                        This is a sample paragraph. Edit it to see changes
+                        in real-time.
+                    </p>
                 </div>
             </div>
         </div>
