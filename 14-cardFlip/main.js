@@ -10,6 +10,8 @@ import { family } from "./data/family.js";
 import { prepositions } from "./data/prepositions.js";
 import { food } from "./data/food.js";
 import { conjunctions } from "./data/conjunctions.js";
+import { a1 } from "./data/a1.js";
+import { a2 } from "./data/a2.js";
 
 // Variables
 
@@ -40,8 +42,6 @@ function createCard(data) {
         </div>
     `;
     cards.innerHTML = card.outerHTML;
-    // cards.innerHTML = ""
-    // cards.appendChild(card)
 
     function attachVolumeIconEventListener(lang, selector) {
         const volumeIcon = document.querySelector(selector);
@@ -100,7 +100,6 @@ randomBtn.addEventListener("click", randomCard);
 filterBtns.forEach((button) => {
     button.addEventListener("click", () => {
         const category = button.dataset.category;
-        // console.log(category);
         filterBtns.forEach((btn) => btn.classList.remove("active"));
         button.classList.add("active");
         const dataMap = {
@@ -116,9 +115,26 @@ filterBtns.forEach((button) => {
             questions,
             sentences,
             verbs,
+            a1,
+            a2,
+            
         };
         dataArray = dataMap[category];
         currentIndex = 0;
         createCard(dataArray[currentIndex]);
     });
+});
+
+const menuToggle = document.querySelector('.menu-toggle');
+const aside = document.querySelector('aside');
+
+menuToggle.addEventListener('click', () => {
+    aside.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!aside.contains(e.target) && !menuToggle.contains(e.target)) {
+        aside.classList.remove('active');
+    }
 });
